@@ -40,15 +40,15 @@ com.aliyun.emas.pocdemo.app-jetified-firebase-messaging-23.0.3-38 /Users/liuqi/.
 com.aliyun.emas.pocdemo.app-jetified-alicloud-android-rest-1.6.5-open-39 /Users/liuqi/.gradle/caches/transforms-3/e8f8b6d745266da046a2f9b6f99ffaca/transformed/jetified-alicloud-android-rest-1.6.5-open/res
 com.aliyun.emas.pocdemo.app-jetified-opush-3.1.0-40 /Users/liuqi/.gradle/caches/transforms-3/f4f32c27b874407f39ad923a26515f03/transformed/jetified-opush-3.1.0/res
 com.aliyun.emas.pocdemo.app-jetified-alicloud-android-agoo-4.7.7-emas-41 /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/res
-com.aliyun.emas.pocdemo.app-packaged_res-42 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/android/build/intermediates/packaged_res/release
-com.aliyun.emas.pocdemo.app-pngs-43 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/pngs/release
-com.aliyun.emas.pocdemo.app-react-44 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/react/release
-com.aliyun.emas.pocdemo.app-resValues-45 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/resValues/release
-com.aliyun.emas.pocdemo.app-rs-46 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/rs/release
-com.aliyun.emas.pocdemo.app-mergeReleaseResources-47 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
-com.aliyun.emas.pocdemo.app-mergeReleaseResources-48 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
-com.aliyun.emas.pocdemo.app-merged_res-49 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/intermediates/merged_res/release
-com.aliyun.emas.pocdemo.app-main-50 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/res
-com.aliyun.emas.pocdemo.app-release-51 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/release/res
-com.aliyun.emas.pocdemo.app-packaged_res-52 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/release
-com.aliyun.emas.pocdemo.app-packaged_res-53 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/node_modules/react-native-screens/android/build/intermediates/packaged_res/release
+com.aliyun.emas.pocdemo.app-pngs-42 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/generated/res/pngs/release
+com.aliyun.emas.pocdemo.app-react-43 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/generated/res/react/release
+com.aliyun.emas.pocdemo.app-resValues-44 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/generated/res/resValues/release
+com.aliyun.emas.pocdemo.app-rs-45 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/generated/res/rs/release
+com.aliyun.emas.pocdemo.app-mergeReleaseResources-46 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/intermediates/incremental/release/mergeReleaseResources/merged.dir
+com.aliyun.emas.pocdemo.app-mergeReleaseResources-47 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/intermediates/incremental/release/mergeReleaseResources/stripped.dir
+com.aliyun.emas.pocdemo.app-merged_res-48 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/build/intermediates/merged_res/release
+com.aliyun.emas.pocdemo.app-main-49 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/src/main/res
+com.aliyun.emas.pocdemo.app-release-50 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/android/app/src/release/res
+com.aliyun.emas.pocdemo.app-packaged_res-51 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/node_modules/aliyun-react-native-push/android/build/intermediates/packaged_res/release
+com.aliyun.emas.pocdemo.app-packaged_res-52 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/release
+com.aliyun.emas.pocdemo.app-packaged_res-53 /Users/liuqi/Desktop/works/reactnative/alibabacloud-push-react-demo/node_modules/react-native-screens/android/build/intermediates/packaged_res/release

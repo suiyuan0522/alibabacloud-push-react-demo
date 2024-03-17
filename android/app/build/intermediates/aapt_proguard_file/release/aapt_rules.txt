@@ -1,0 +1,141 @@
+-keep class androidx.core.app.CoreComponentFactory { <init>(); }
+-keep class androidx.startup.InitializationProvider { <init>(); }
+-keep class com.alibaba.sdk.android.push.AgooFirebaseMessagingService { <init>(); }
+-keep class com.alibaba.sdk.android.push.HonorPushMessageService { <init>(); }
+-keep class com.alibaba.sdk.android.push.MeizuPushReceiver { <init>(); }
+-keep class com.alibaba.sdk.android.push.MiPushBroadcastReceiver { <init>(); }
+-keep class com.alibaba.sdk.android.push.channel.KeepChannelService { <init>(); }
+-keep class com.alibaba.sdk.android.push.huawei.HuaweiPushMessageService { <init>(); }
+-keep class com.alibaba.sdk.android.push.impl.PushMessageReceiverImpl { <init>(); }
+-keep class com.aliyun.ams.emas.push.AgooInnerService { <init>(); }
+-keep class com.aliyun.ams.emas.push.MsgService { <init>(); }
+-keep class com.aliyun.ams.emas.push.NotificationActivity { <init>(); }
+-keep class com.aliyun.ams.push.AliyunPushMessageReceiver { <init>(); }
+-keep class com.aliyun.ams.push.example.MainActivity { <init>(); }
+-keep class com.aliyun.ams.push.example.MainApplication { <init>(); }
+-keep class com.google.android.datatransport.runtime.backends.TransportBackendDiscovery { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver { <init>(); }
+-keep class com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService { <init>(); }
+-keep class com.google.android.gms.common.api.GoogleApiActivity { <init>(); }
+-keep class com.google.firebase.components.ComponentDiscoveryService { <init>(); }
+-keep class com.google.firebase.iid.FirebaseInstanceIdReceiver { <init>(); }
+-keep class com.google.firebase.messaging.FirebaseMessagingService { <init>(); }
+-keep class com.google.firebase.provider.FirebaseInitProvider { <init>(); }
+-keep class com.heytap.msp.push.service.CompatibleDataMessageCallbackService { <init>(); }
+-keep class com.heytap.msp.push.service.DataMessageCallbackService { <init>(); }
+-keep class com.huawei.agconnect.core.ServiceDiscovery { <init>(); }
+-keep class com.huawei.agconnect.core.provider.AGConnectInitializeProvider { <init>(); }
+-keep class com.huawei.hms.aaid.InitProvider { <init>(); }
+-keep class com.huawei.hms.activity.BridgeActivity { <init>(); }
+-keep class com.huawei.hms.activity.EnableServiceActivity { <init>(); }
+-keep class com.huawei.hms.support.api.push.PushMsgReceiver { <init>(); }
+-keep class com.huawei.hms.support.api.push.PushProvider { <init>(); }
+-keep class com.huawei.hms.support.api.push.PushReceiver { <init>(); }
+-keep class com.huawei.hms.support.api.push.TransActivity { <init>(); }
+-keep class com.huawei.hms.support.api.push.service.HmsMsgService { <init>(); }
+-keep class com.meizu.cloud.pushsdk.MzPushSystemReceiver { <init>(); }
+-keep class com.meizu.cloud.pushsdk.NotificationService { <init>(); }
+-keep class com.taobao.accs.ChannelService { <init>(); }
+-keep class com.taobao.accs.ChannelService$KernelService { <init>(); }
+-keep class com.taobao.accs.EventReceiver { <init>(); }
+-keep class com.taobao.accs.ServiceReceiver { <init>(); }
+-keep class com.taobao.accs.data.MsgDistributeService { <init>(); }
+-keep class com.taobao.accs.internal.AccsJobService { <init>(); }
+-keep class com.vivo.push.sdk.service.CommandClientService { <init>(); }
+-keep class com.xiaomi.mipush.sdk.MessageHandleService { <init>(); }
+-keep class com.xiaomi.mipush.sdk.NotificationClickedActivity { <init>(); }
+-keep class com.xiaomi.mipush.sdk.PushMessageHandler { <init>(); }
+-keep class com.xiaomi.push.service.XMJobService { <init>(); }
+-keep class com.xiaomi.push.service.XMPushService { <init>(); }
+-keep class com.xiaomi.push.service.receivers.PingReceiver { <init>(); }
+-keep class org.android.agoo.accs.AgooService { <init>(); }
+-keep class android.widget.Space { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.app.AlertController$RecycleListView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ActionMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ExpandedMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.view.menu.ListMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContainer { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarContextView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionBarOverlayLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActionMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ActivityChooserView$InnerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.AlertDialogLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ButtonBarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ContentFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.DialogTitle { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.FitWindowsLinearLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.SearchView$SearchAutoComplete { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.Toolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.appcompat.widget.ViewStubCompat { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.helper.widget.Flow { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.Barrier { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.constraintlayout.widget.ConstraintLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.coordinatorlayout.widget.CoordinatorLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.core.widget.NestedScrollView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.fragment.app.FragmentContainerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class androidx.recyclerview.widget.RecyclerView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.appbar.MaterialToolbar { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.button.MaterialButtonToggleGroup { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.chip.Chip { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.datepicker.MaterialCalendarGridView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.BaselineLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.CheckableImageButton { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.ClippableRoundedCornerLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuItemView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.NavigationMenuView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.internal.TouchObserverFrameLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.Snackbar$SnackbarLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.snackbar.SnackbarContentLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputEditText { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.textfield.TextInputLayout { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ChipTextInputComboView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ClockFaceView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.ClockHandView { <init>(android.content.Context, android.util.AttributeSet); }
+
+-keep class com.google.android.material.timepicker.TimePickerView { <init>(android.content.Context, android.util.AttributeSet); }
+

@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.aliyun.emas.pocdemo.app-mergeReleaseResources-46:/values-b+my+Qaag/values-b+my+Qaag.xml",
+            "map": [
+                {
+                    "source": "/Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/res/values-b+my+Qaag/values-b+my+Qaag.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,245,574,644,891",
+                        "endColumns": "189,328,69,246,68",
+                        "endOffsets": "240,569,639,886,955"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,7",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,245,574,644,964",
+                        "endColumns": "189,328,69,246,68",
+                        "endOffsets": "240,569,639,886,1028"
+                    }
+                },
+                {
+                    "source": "/Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/res/values-b+my+Qaag/values-b+my+Qaag.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "72",
+                        "endOffsets": "123"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "891",
+                        "endColumns": "72",
+                        "endOffsets": "959"
+                    }
+                }
+            ]
+        }
+    ]
+}

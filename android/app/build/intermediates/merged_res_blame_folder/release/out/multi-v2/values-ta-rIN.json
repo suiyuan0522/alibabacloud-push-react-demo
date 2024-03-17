@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.aliyun.emas.pocdemo.app-mergeReleaseResources-46:/values-ta-rIN/values-ta-rIN.xml",
+            "map": [
+                {
+                    "source": "/Users/liuqi/.gradle/caches/transforms-3/f4f32c27b874407f39ad923a26515f03/transformed/jetified-opush-3.1.0/res/values-ta-rIN/values-ta-rIN.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "71",
+                        "endOffsets": "122"
+                    }
+                }
+            ]
+        }
+    ]
+}

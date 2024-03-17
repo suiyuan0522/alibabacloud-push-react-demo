@@ -1,0 +1,1193 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.aliyun.emas.pocdemo"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+9        android:targetSdkVersion="33" />
+10
+11    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+11-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/AndroidManifest.xml:5:5-77
+11-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/AndroidManifest.xml:5:22-75
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:3:5-67
+12-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:3:22-64
+13    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+13-->[com.facebook.flipper:flipper:0.125.0] /Users/liuqi/.gradle/caches/transforms-3/7791fe77b8ab9730d0e25ce55c6aa090/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:5-76
+13-->[com.facebook.flipper:flipper:0.125.0] /Users/liuqi/.gradle/caches/transforms-3/7791fe77b8ab9730d0e25ce55c6aa090/transformed/jetified-flipper-0.125.0/AndroidManifest.xml:16:22-73
+14    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+14-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:25:5-79
+14-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:25:22-76
+15    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+15-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:26:5-68
+15-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:26:22-65
+16    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" /> <!-- 兼容flyme5.0以下版本，魅族内部集成pushSDK必填，不然无法收到消息 -->
+16-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:28:5-82
+16-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:28:22-79
+17    <uses-permission android:name="com.meizu.flyme.push.permission.RECEIVE" />
+17-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:14:5-79
+17-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:14:22-76
+18
+19    <permission
+19-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:16:5-18:47
+20        android:name="com.aliyun.emas.pocdemo.push.permission.MESSAGE"
+20-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:17:9-64
+21        android:protectionLevel="signature" />
+21-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:18:9-44
+22
+23    <uses-permission android:name="com.aliyun.emas.pocdemo.push.permission.MESSAGE" /> <!-- 兼容flyme3.0配置权限 -->
+23-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:20:5-80
+23-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:20:22-77
+24    <uses-permission android:name="com.meizu.c2dm.permission.RECEIVE" />
+24-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:23:5-73
+24-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:23:22-70
+25    <uses-permission android:name="com.coloros.mcs.permission.RECIEVE_MCS_MESSAGE" />
+25-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:13:5-86
+25-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:13:22-83
+26    <uses-permission android:name="com.heytap.mcs.permission.RECIEVE_MCS_MESSAGE" /> <!-- 小米通道相关权限 -->
+26-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:14:5-85
+26-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:14:22-82
+27    <permission
+27-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:13:5-15:47
+28        android:name="com.aliyun.emas.pocdemo.permission.MIPUSH_RECEIVE"
+28-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:14:9-66
+29        android:protectionLevel="signature" />
+29-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:15:9-44
+30
+31    <uses-permission android:name="android.permission.VIBRATE" />
+31-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:19:5-66
+31-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:19:22-63
+32    <uses-permission android:name="com.aliyun.emas.pocdemo.permission.MIPUSH_RECEIVE" /> <!-- 打开应用时，获取应用信息判断是否有已经打开的界面 -->
+32-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:20:5-82
+32-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:20:22-79
+33    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 打开应用时，如果应用存在就把他移到前台 -->
+33-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:17:5-68
+33-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:17:22-65
+34    <uses-permission android:name="android.permission.REORDER_TASKS" />
+34-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:20:5-72
+34-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:20:22-69
+35
+36    <permission
+36-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:22:5-26:47
+37        android:name="com.aliyun.emas.pocdemo.AGOO"
+37-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:23:9-45
+38        android:description="@string/agoo_permission_description"
+38-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:24:9-66
+39        android:label="@string/agoo_permission_label"
+39-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:25:9-54
+40        android:protectionLevel="signature" />
+40-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:26:9-44
+41
+42    <uses-permission android:name="com.aliyun.emas.pocdemo.AGOO" />
+42-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:28:5-61
+42-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:28:22-58
+43    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+43-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:10:5-77
+43-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:10:22-74
+44    <uses-permission android:name="com.meizu.flyme.permission.PUSH" />
+44-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:13:5-71
+44-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:13:22-68
+45
+46    <permission
+46-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:9:5-11:47
+47        android:name="com.aliyun.emas.pocdemo.permission.PROCESS_PUSH_MSG"
+47-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:10:9-68
+48        android:protectionLevel="signature" /> <!-- PUSH_PROVIDER and PUSH_WRITE_PROVIDER are both provider registered permissions for the notification switch. -->
+48-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:11:9-44
+49    <!-- The SDK's notification bar switch, EMUI 9.x becomes write to the local sp, sharing the file through the provider to the push-rom, which reads the sp file to get the status of the notification bar switch. -->
+50    <permission
+50-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:14:5-16:47
+51        android:name="com.aliyun.emas.pocdemo.permission.PUSH_PROVIDER"
+51-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:15:9-65
+52        android:protectionLevel="signature" />
+52-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:16:9-44
+53    <permission
+53-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:17:5-19:47
+54        android:name="com.aliyun.emas.pocdemo.permission.PUSH_WRITE_PROVIDER"
+54-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:18:9-71
+55        android:protectionLevel="signature" />
+55-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:19:9-44
+56
+57    <uses-permission android:name="com.aliyun.emas.pocdemo.permission.PROCESS_PUSH_MSG" />
+57-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:21:5-84
+57-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:21:22-81
+58    <uses-permission android:name="com.aliyun.emas.pocdemo.permission.PUSH_PROVIDER" />
+58-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:22:5-81
+58-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:22:22-78
+59    <uses-permission android:name="com.hihonor.push.permission.READ_PUSH_NOTIFICATION_INFO" />
+59-->[com.aliyun.ams:honor-push:7.0.61.302] /Users/liuqi/.gradle/caches/transforms-3/357538819e16a802b2f468ca00988b64/transformed/jetified-honor-push-7.0.61.302/AndroidManifest.xml:11:5-95
+59-->[com.aliyun.ams:honor-push:7.0.61.302] /Users/liuqi/.gradle/caches/transforms-3/357538819e16a802b2f468ca00988b64/transformed/jetified-honor-push-7.0.61.302/AndroidManifest.xml:11:22-92
+60
+61    <permission
+61-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:22:5-26:47
+62        android:name="com.aliyun.emas.pocdemo.ACCS"
+62-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:23:9-45
+63        android:description="@string/accs_permission_description"
+63-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:24:9-66
+64        android:label="@string/accs_permission_label"
+64-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:25:9-54
+65        android:protectionLevel="signature" />
+65-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:26:9-44
+66
+67    <uses-permission android:name="com.aliyun.emas.pocdemo.ACCS" />
+67-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:28:5-61
+67-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:28:22-58
+68
+69    <queries>
+69-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:14:5-21:15
+70        <intent>
+70-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:15:9-17:18
+71            <action android:name="com.huawei.hms.core.aidlservice" />
+71-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:16:13-70
+71-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:16:21-67
+72        </intent>
+73        <intent>
+73-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:18:9-20:18
+74            <action android:name="com.huawei.hms.core" />
+74-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:19:13-58
+74-->[com.huawei.hms:device:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/c2289b77bf0a628d2d41f7c291b594fe/transformed/jetified-device-6.9.0.300/AndroidManifest.xml:19:21-55
+75        </intent>
+76    </queries>
+77
+78    <application
+78-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:5-59:19
+79        android:name="com.aliyun.ams.push.example.MainApplication"
+79-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:18-76
+80        android:allowBackup="false"
+80-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:191-218
+81        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+81-->[androidx.core:core:1.8.0] /Users/liuqi/.gradle/caches/transforms-3/4147f26a61fb6196770ea38e58daddf3/transformed/core-1.8.0/AndroidManifest.xml:24:18-86
+82        android:debuggable="true"
+83        android:icon="@mipmap/ic_launcher"
+83-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:110-144
+84        android:label="@string/app_name"
+84-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:77-109
+85        android:roundIcon="@mipmap/ic_launcher_round"
+85-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:145-190
+86        android:theme="@style/AppTheme"
+86-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:6:219-250
+87        android:usesCleartextTraffic="true" >
+87-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/AndroidManifest.xml:8:9-44
+88        <activity
+88-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/AndroidManifest.xml:11:9-111
+89            android:name="com.facebook.react.devsupport.DevSettingsActivity"
+89-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/AndroidManifest.xml:11:19-83
+90            android:exported="false" />
+90-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/AndroidManifest.xml:11:84-108
+91
+92        <meta-data
+92-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:9:9-86
+93            android:name="com.alibaba.app.appkey"
+93-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:9:20-57
+94            android:value="333996702" /> <!-- 请填写你自己的- appKey -->
+94-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:9:58-83
+95        <meta-data
+95-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:11:9-112
+96            android:name="com.alibaba.app.appsecret"
+96-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:11:20-60
+97            android:value="1c8ad256bd304e2192a5af578cf25612" /> <!-- 华为通道的参数appid -->
+97-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:11:61-109
+98        <meta-data
+98-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:14:9-97
+99            android:name="com.huawei.hms.client.appid"
+99-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:14:20-62
+100            android:value="appid=104689013" /> <!-- vivo通道的参数api_key为appkey -->
+100-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:14:63-94
+101        <meta-data
+101-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:17:9-112
+102            android:name="com.vivo.push.api_key"
+102-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:17:20-56
+103            android:value="76bf8c20-a40e-4638-a6b7-28726b280d78" />
+103-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:17:57-109
+104        <meta-data
+104-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:18:9-80
+105            android:name="com.vivo.push.app_id"
+105-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:18:20-55
+106            android:value="16835" /> <!-- honor通道的参数 -->
+106-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:18:56-77
+107        <meta-data
+107-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:21:9-87
+108            android:name="com.hihonor.push.app_id"
+108-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:21:20-58
+109            android:value="220884703" /> <!-- oppo -->
+109-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:21:59-84
+110        <meta-data
+110-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:24:9-72
+111            android:name="com.oppo.push.key"
+111-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:24:20-52
+112            android:value="" />
+112-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:24:53-69
+113        <meta-data
+113-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:25:9-75
+114            android:name="com.oppo.push.secret"
+114-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:25:20-55
+115            android:value="" /> <!-- 小米 -->
+115-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:25:56-72
+116        <meta-data
+116-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:27:9-92
+117            android:name="com.xiaomi.push.id"
+117-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:27:20-53
+118            android:value="2882303761518017656" />
+118-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:27:54-89
+119        <meta-data
+119-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:28:9-87
+120            android:name="com.xiaomi.push.key"
+120-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:28:20-54
+121            android:value="5821801747656" /> <!-- 魅族 -->
+121-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:28:55-84
+122        <meta-data
+122-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:31:9-78
+123            android:name="com.meizu.push.id"
+123-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:31:20-52
+124            android:value="121026" />
+124-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:31:53-75
+125        <meta-data
+125-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:32:9-105
+126            android:name="com.meizu.push.key"
+126-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:32:20-53
+127            android:value="ba7cd1a355d8416dab0142e390170e5a" /> <!-- fcm -->
+127-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:32:54-102
+128        <meta-data
+128-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:35:9-86
+129            android:name="com.gcm.push.sendid"
+129-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:35:20-54
+130            android:value="977409684591" />
+130-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:35:55-83
+131        <meta-data
+131-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:36:9-126
+132            android:name="com.gcm.push.applicationid"
+132-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:36:20-61
+133            android:value="1:977409684591:android:602d85395544babef9499a" />
+133-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:36:62-123
+134        <meta-data
+134-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:37:9-96
+135            android:name="com.gcm.push.projectid"
+135-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:37:20-57
+136            android:value="cloudpushdemo-9b2e9" />
+136-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:37:58-93
+137        <meta-data
+137-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:38:9-114
+138            android:name="com.gcm.push.api.key"
+138-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:38:20-55
+139            android:value="AIzaSyBLOVcofQMaz0kx6-AsTfNRr-j2asK96lQ" />
+139-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:38:56-111
+140
+141        <activity
+141-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:9-46:20
+142            android:name="com.aliyun.ams.push.example.MainActivity"
+142-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:19-74
+143            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+143-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:108-217
+144            android:exported="true"
+144-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:293-316
+145            android:label="@string/app_name"
+145-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:75-107
+146            android:launchMode="singleTask"
+146-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:218-249
+147            android:windowSoftInputMode="adjustResize" >
+147-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:41:250-292
+148            <intent-filter>
+148-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:42:13-45:29
+149                <action android:name="android.intent.action.MAIN" />
+149-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:43:17-69
+149-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:43:25-66
+150
+151                <category android:name="android.intent.category.LAUNCHER" />
+151-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:44:17-77
+151-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:44:27-74
+152            </intent-filter>
+153        </activity>
+154
+155        <receiver
+155-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:48:9-58:20
+156            android:name="com.aliyun.ams.push.AliyunPushMessageReceiver"
+156-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:48:19-79
+157            android:exported="false" >
+157-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:48:80-104
+158            <intent-filter>
+158-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:49:13-51:29
+159                <action android:name="com.alibaba.push2.action.NOTIFICATION_OPENED" />
+159-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:50:17-87
+159-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:50:25-84
+160            </intent-filter>
+161            <intent-filter>
+161-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:52:13-54:29
+162                <action android:name="com.alibaba.push2.action.NOTIFICATION_REMOVED" />
+162-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:53:17-88
+162-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:53:25-85
+163            </intent-filter>
+164            <intent-filter>
+164-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:55:13-57:29
+165                <action android:name="com.alibaba.sdk.android.push.RECEIVE" />
+165-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:56:17-79
+165-->/Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/AndroidManifest.xml:56:25-76
+166            </intent-filter>
+167        </receiver>
+168
+169        <meta-data
+169-->[com.facebook.soloader:soloader:0.10.5] /Users/liuqi/.gradle/caches/transforms-3/06e68ce31cc2ab4404357ee28381dd8e/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:12:9-14:37
+170            android:name="com.facebook.soloader.enabled"
+170-->[com.facebook.soloader:soloader:0.10.5] /Users/liuqi/.gradle/caches/transforms-3/06e68ce31cc2ab4404357ee28381dd8e/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:13:13-57
+171            android:value="false" />
+171-->[com.facebook.soloader:soloader:0.10.5] /Users/liuqi/.gradle/caches/transforms-3/06e68ce31cc2ab4404357ee28381dd8e/transformed/jetified-soloader-0.10.5/AndroidManifest.xml:14:13-34
+172        <meta-data
+172-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:12:9-14:37
+173            android:name="firebase_messaging_auto_init_enabled"
+173-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:13:13-64
+174            android:value="false" />
+174-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:14:13-34
+175        <meta-data
+175-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:15:9-17:37
+176            android:name="firebase_analytics_collection_enabled"
+176-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:16:13-65
+177            android:value="false" /> <!-- fcm辅助通道 -->
+177-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:17:13-34
+178        <service
+178-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:20:9-27:19
+179            android:name="com.alibaba.sdk.android.push.AgooFirebaseMessagingService"
+179-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:21:13-85
+180            android:exported="false"
+180-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:22:13-37
+181            android:process="@string/aliyun_accs_target_process" >
+181-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:23:13-65
+182            <intent-filter>
+182-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:24:13-26:29
+183                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+183-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:25:17-78
+183-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:25:25-75
+184            </intent-filter>
+185        </service>
+186
+187        <receiver
+187-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:31:9-38:20
+188            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+188-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:32:13-78
+189            android:exported="true"
+189-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:33:13-36
+190            android:permission="com.google.android.c2dm.permission.SEND" >
+190-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:34:13-73
+191            <intent-filter>
+191-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:35:13-37:29
+192                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+192-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:36:17-81
+192-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:36:25-78
+193            </intent-filter>
+194        </receiver>
+195        <!--
+196             FirebaseMessagingService performs security checks at runtime,
+197             but set to not exported to explicitly avoid allowing another app to call it.
+198        -->
+199        <service
+199-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:44:9-51:19
+200            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+200-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:45:13-82
+201            android:directBootAware="true"
+201-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:46:13-43
+202            android:exported="false" >
+202-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:47:13-37
+203            <intent-filter android:priority="-500" >
+203-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:24:13-26:29
+204                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+204-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:25:17-78
+204-->[com.aliyun.ams:alicloud-android-third-push-fcm:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/f75347d7d13d2961ada1f2c219576eab/transformed/jetified-alicloud-android-third-push-fcm-3.8.7/AndroidManifest.xml:25:25-75
+205            </intent-filter>
+206        </service>
+207        <service
+207-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:52:9-58:19
+208            android:name="com.google.firebase.components.ComponentDiscoveryService"
+208-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:53:13-84
+209            android:directBootAware="true"
+209-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:35:13-43
+210            android:exported="false" >
+210-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:54:13-37
+211            <meta-data
+211-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:55:13-57:85
+212                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+212-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:56:17-119
+213                android:value="com.google.firebase.components.ComponentRegistrar" />
+213-->[com.google.firebase:firebase-messaging:23.0.3] /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/AndroidManifest.xml:57:17-82
+214            <meta-data
+214-->[com.google.firebase:firebase-datatransport:18.1.2] /Users/liuqi/.gradle/caches/transforms-3/8e28ef5b7c50d39d560ade30761a8e55/transformed/jetified-firebase-datatransport-18.1.2/AndroidManifest.xml:28:13-30:85
+215                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+215-->[com.google.firebase:firebase-datatransport:18.1.2] /Users/liuqi/.gradle/caches/transforms-3/8e28ef5b7c50d39d560ade30761a8e55/transformed/jetified-firebase-datatransport-18.1.2/AndroidManifest.xml:29:17-115
+216                android:value="com.google.firebase.components.ComponentRegistrar" />
+216-->[com.google.firebase:firebase-datatransport:18.1.2] /Users/liuqi/.gradle/caches/transforms-3/8e28ef5b7c50d39d560ade30761a8e55/transformed/jetified-firebase-datatransport-18.1.2/AndroidManifest.xml:30:17-82
+217            <meta-data
+217-->[com.google.firebase:firebase-installations:17.0.1] /Users/liuqi/.gradle/caches/transforms-3/ef53d5d48820b590f6167cbe365a7dfe/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:18:13-20:85
+218                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+218-->[com.google.firebase:firebase-installations:17.0.1] /Users/liuqi/.gradle/caches/transforms-3/ef53d5d48820b590f6167cbe365a7dfe/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:19:17-127
+219                android:value="com.google.firebase.components.ComponentRegistrar" />
+219-->[com.google.firebase:firebase-installations:17.0.1] /Users/liuqi/.gradle/caches/transforms-3/ef53d5d48820b590f6167cbe365a7dfe/transformed/jetified-firebase-installations-17.0.1/AndroidManifest.xml:20:17-82
+220        </service>
+221
+222        <activity
+222-->[com.google.android.gms:play-services-base:18.0.1] /Users/liuqi/.gradle/caches/transforms-3/77807ca543432c5fe60364567061d728/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:9-22:45
+223            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+223-->[com.google.android.gms:play-services-base:18.0.1] /Users/liuqi/.gradle/caches/transforms-3/77807ca543432c5fe60364567061d728/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:20:19-85
+224            android:exported="false"
+224-->[com.google.android.gms:play-services-base:18.0.1] /Users/liuqi/.gradle/caches/transforms-3/77807ca543432c5fe60364567061d728/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:22:19-43
+225            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+225-->[com.google.android.gms:play-services-base:18.0.1] /Users/liuqi/.gradle/caches/transforms-3/77807ca543432c5fe60364567061d728/transformed/jetified-play-services-base-18.0.1/AndroidManifest.xml:21:19-78
+226
+227        <provider
+227-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:26:9-31:39
+228            android:name="com.google.firebase.provider.FirebaseInitProvider"
+228-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:27:13-77
+229            android:authorities="com.aliyun.emas.pocdemo.firebaseinitprovider"
+229-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:28:13-72
+230            android:directBootAware="true"
+230-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:29:13-43
+231            android:exported="false"
+231-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:30:13-37
+232            android:initOrder="100" />
+232-->[com.google.firebase:firebase-common:20.1.0] /Users/liuqi/.gradle/caches/transforms-3/149c1cc75dc9413ad26acd70ce8e2694/transformed/jetified-firebase-common-20.1.0/AndroidManifest.xml:31:13-36
+233
+234        <meta-data
+234-->[com.google.android.gms:play-services-basement:18.0.0] /Users/liuqi/.gradle/caches/transforms-3/8c45b2f617d58504dcf0b1bc86086a24/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:21:9-23:69
+235            android:name="com.google.android.gms.version"
+235-->[com.google.android.gms:play-services-basement:18.0.0] /Users/liuqi/.gradle/caches/transforms-3/8c45b2f617d58504dcf0b1bc86086a24/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:22:13-58
+236            android:value="@integer/google_play_services_version" />
+236-->[com.google.android.gms:play-services-basement:18.0.0] /Users/liuqi/.gradle/caches/transforms-3/8c45b2f617d58504dcf0b1bc86086a24/transformed/jetified-play-services-basement-18.0.0/AndroidManifest.xml:23:13-66
+237
+238        <provider
+238-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+239            android:name="androidx.startup.InitializationProvider"
+239-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+240            android:authorities="com.aliyun.emas.pocdemo.androidx-startup"
+240-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+241            android:exported="false" >
+241-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+242            <meta-data
+242-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+243                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+243-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+244                android:value="androidx.startup" />
+244-->[androidx.emoji2:emoji2:1.2.0] /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+245            <meta-data
+245-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/liuqi/.gradle/caches/transforms-3/ae27995e6287e7fd33ae4364afb490c1/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+246                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+246-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/liuqi/.gradle/caches/transforms-3/ae27995e6287e7fd33ae4364afb490c1/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+247                android:value="androidx.startup" />
+247-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/liuqi/.gradle/caches/transforms-3/ae27995e6287e7fd33ae4364afb490c1/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+248        </provider>
+249
+250        <service
+250-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/2b2702665c3272c3c0b7f357278d215b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:29:9-35:19
+251            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+251-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/2b2702665c3272c3c0b7f357278d215b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:30:13-103
+252            android:exported="false" >
+252-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/2b2702665c3272c3c0b7f357278d215b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:31:13-37
+253            <meta-data
+253-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/2b2702665c3272c3c0b7f357278d215b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:32:13-34:39
+254                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+254-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/2b2702665c3272c3c0b7f357278d215b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:33:17-94
+255                android:value="cct" />
+255-->[com.google.android.datatransport:transport-backend-cct:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/2b2702665c3272c3c0b7f357278d215b/transformed/jetified-transport-backend-cct-3.1.3/AndroidManifest.xml:34:17-36
+256        </service>
+257        <service
+257-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:26:9-30:19
+258            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+258-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:27:13-117
+259            android:exported="false"
+259-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:28:13-37
+260            android:permission="android.permission.BIND_JOB_SERVICE" >
+260-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:29:13-69
+261        </service>
+262
+263        <receiver
+263-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:32:9-34:40
+264            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+264-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:33:13-132
+265            android:exported="false" /> <!-- Push SDK -->
+265-->[com.google.android.datatransport:transport-runtime:3.1.3] /Users/liuqi/.gradle/caches/transforms-3/19a2d1818cd8a37d86f338aa6d72dcc1/transformed/jetified-transport-runtime-3.1.3/AndroidManifest.xml:34:13-37
+266        <service
+266-->[com.aliyun.ams:alicloud-android-push:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d028a592b210cf15b8e352c0749b1bfa/transformed/jetified-alicloud-android-push-3.8.7/AndroidManifest.xml:18:9-22:69
+267            android:name="com.alibaba.sdk.android.push.channel.KeepChannelService"
+267-->[com.aliyun.ams:alicloud-android-push:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d028a592b210cf15b8e352c0749b1bfa/transformed/jetified-alicloud-android-push-3.8.7/AndroidManifest.xml:19:13-83
+268            android:exported="false"
+268-->[com.aliyun.ams:alicloud-android-push:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d028a592b210cf15b8e352c0749b1bfa/transformed/jetified-alicloud-android-push-3.8.7/AndroidManifest.xml:20:13-37
+269            android:permission="android.permission.BIND_JOB_SERVICE"
+269-->[com.aliyun.ams:alicloud-android-push:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d028a592b210cf15b8e352c0749b1bfa/transformed/jetified-alicloud-android-push-3.8.7/AndroidManifest.xml:21:13-69
+270            android:process="@string/aliyun_accs_channel_process" /> <!-- meizu通道配置 -->
+270-->[com.aliyun.ams:alicloud-android-push:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d028a592b210cf15b8e352c0749b1bfa/transformed/jetified-alicloud-android-push-3.8.7/AndroidManifest.xml:22:13-66
+271        <receiver
+271-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:28:9-46:20
+272            android:name="com.alibaba.sdk.android.push.MeizuPushReceiver"
+272-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:29:13-74
+273            android:exported="true"
+273-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:30:13-36
+274            android:process="@string/aliyun_accs_target_process" >
+274-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:31:13-65
+275            <intent-filter>
+275-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:32:13-45:29
+276
+277                <!-- 接收push消息 -->
+278                <action android:name="com.meizu.flyme.push.intent.MESSAGE" />
+278-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:35:17-78
+278-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:35:25-75
+279                <!-- 接收register消息 -->
+280                <action android:name="com.meizu.flyme.push.intent.REGISTER.FEEDBACK" />
+280-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:37:17-88
+280-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:37:25-85
+281                <!-- 接收unregister消息 -->
+282                <action android:name="com.meizu.flyme.push.intent.UNREGISTER.FEEDBACK" />
+282-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:39:17-90
+282-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:39:25-87
+283                <!-- 兼容低版本Flyme3推送服务配置 -->
+284                <action android:name="com.meizu.c2dm.intent.REGISTRATION" />
+284-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:41:17-77
+284-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:41:25-74
+285                <action android:name="com.meizu.c2dm.intent.RECEIVE" />
+285-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:42:17-72
+285-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:42:25-69
+286
+287                <category android:name="com.aliyun.emas.pocdemo" />
+287-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:44:17-61
+287-->[com.aliyun.ams:alicloud-android-third-push-meizu:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/0353f95a76b3b2dcf2846a217954ac7e/transformed/jetified-alicloud-android-third-push-meizu-3.8.7/AndroidManifest.xml:44:27-58
+288            </intent-filter>
+289        </receiver> <!-- vivo通道配置 -->
+290        <service
+290-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:16:9-20:68
+291            android:name="com.vivo.push.sdk.service.CommandClientService"
+291-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:17:13-74
+292            android:exported="true"
+292-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:18:13-36
+293            android:permission="com.push.permission.UPSTAGESERVICE"
+293-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:19:13-68
+294            android:process="@string/aliyun_accs_target_process" />
+294-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:20:13-65
+295
+296        <receiver
+296-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:22:9-31:20
+297            android:name="com.alibaba.sdk.android.push.impl.PushMessageReceiverImpl"
+297-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:23:13-85
+298            android:exported="false"
+298-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:24:13-37
+299            android:process="@string/aliyun_accs_target_process" >
+299-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:25:13-65
+300            <intent-filter>
+300-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:26:13-30:29
+301
+302                <!-- 接收push消息 -->
+303                <action android:name="com.vivo.pushclient.action.RECEIVE" />
+303-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:29:17-77
+303-->[com.aliyun.ams:alicloud-android-third-push-vivo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/8a2d3da5cf71c7f81c0cb1873af73fef/transformed/jetified-alicloud-android-third-push-vivo-3.8.7/AndroidManifest.xml:29:25-74
+304            </intent-filter>
+305        </receiver> <!-- oppo通道配置 -->
+306        <service
+306-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:19:9-27:19
+307            android:name="com.heytap.msp.push.service.CompatibleDataMessageCallbackService"
+307-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:20:13-92
+308            android:exported="true"
+308-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:21:13-36
+309            android:permission="com.coloros.mcs.permission.SEND_MCS_MESSAGE"
+309-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:22:13-77
+310            android:process="@string/aliyun_accs_target_process" >
+310-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:23:13-65
+311            <intent-filter>
+311-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:24:13-26:29
+312                <action android:name="com.coloros.mcs.action.RECEIVE_MCS_MESSAGE" />
+312-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:25:17-85
+312-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:25:25-82
+313            </intent-filter>
+314        </service>
+315        <service
+315-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:28:9-37:19
+316            android:name="com.heytap.msp.push.service.DataMessageCallbackService"
+316-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:29:13-82
+317            android:exported="true"
+317-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:30:13-36
+318            android:permission="com.heytap.mcs.permission.SEND_PUSH_MESSAGE"
+318-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:31:13-77
+319            android:process="@string/aliyun_accs_target_process" >
+319-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:32:13-65
+320            <intent-filter>
+320-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:33:13-36:29
+321                <action android:name="com.heytap.mcs.action.RECEIVE_MCS_MESSAGE" />
+321-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:34:17-84
+321-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:34:25-81
+322                <action android:name="com.heytap.msp.push.RECEIVE_MCS_MESSAGE" />
+322-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:35:17-82
+322-->[com.aliyun.ams:alicloud-android-third-push-oppo:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/97bd4ac4ef21c469ffa4fb910d2d2369/transformed/jetified-alicloud-android-third-push-oppo-3.8.7/AndroidManifest.xml:35:25-79
+323            </intent-filter>
+324        </service> <!-- 如果应用targetSdkVersion >= 31，且接入的Android客户端SDK版本为4.9.1及以上，需配置： -->
+325        <activity
+325-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:25:9-32:20
+326            android:name="com.xiaomi.mipush.sdk.NotificationClickedActivity"
+326-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:26:13-77
+327            android:enabled="true"
+327-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:27:13-35
+328            android:excludeFromRecents="true"
+328-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:71:13-46
+329            android:exported="true"
+329-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:28:13-36
+330            android:launchMode="singleInstance"
+330-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:29:13-48
+331            android:process="@string/aliyun_accs_target_process"
+331-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:30:13-65
+332            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+332-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:31:13-72
+333            <meta-data
+333-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:75:13-77:46
+334                android:name="supportStyle"
+334-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:76:17-44
+335                android:value="scene|voip" />
+335-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:77:17-43
+336        </activity> <!-- xiaom辅助通道 -->
+337        <service
+337-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:35:9-40:47
+338            android:name="com.xiaomi.push.service.XMPushService"
+338-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:36:13-65
+339            android:enabled="true"
+339-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:37:13-35
+340            android:exported="false"
+340-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:38:13-37
+341            android:process="@string/aliyun_accs_channel_process" /> <!-- 注：此service必须在3.0.1版本以后（包括3.0.1版本）加入 -->
+341-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:39:13-66
+342        <service
+342-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:43:9-49:47
+343            android:name="com.xiaomi.push.service.XMJobService"
+343-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:44:13-64
+344            android:enabled="true"
+344-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:45:13-35
+345            android:exported="false"
+345-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:46:13-37
+346            android:permission="android.permission.BIND_JOB_SERVICE"
+346-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:47:13-69
+347            android:process="@string/aliyun_accs_channel_process" />
+347-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:48:13-66
+348        <service
+348-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:50:9-55:68
+349            android:name="com.xiaomi.mipush.sdk.PushMessageHandler"
+349-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:51:13-68
+350            android:enabled="true"
+350-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:52:13-35
+351            android:exported="true"
+351-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:53:13-36
+352            android:permission="com.xiaomi.xmsf.permission.MIPUSH_RECEIVE"
+352-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:54:13-75
+353            android:process="@string/aliyun_accs_target_process" />
+353-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:55:13-65
+354
+355        <receiver
+355-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:57:9-65:20
+356            android:name="com.xiaomi.push.service.receivers.PingReceiver"
+356-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:58:13-74
+357            android:exported="false"
+357-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:59:13-37
+358            android:process="@string/aliyun_accs_channel_process" >
+358-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:60:13-66
+359            <intent-filter>
+359-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:62:13-64:29
+360                <action android:name="com.xiaomi.push.PING_TIMER" />
+360-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:63:17-69
+360-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:63:25-66
+361            </intent-filter>
+362        </receiver>
+363        <receiver
+363-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:66:9-79:20
+364            android:name="com.alibaba.sdk.android.push.MiPushBroadcastReceiver"
+364-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:67:13-80
+365            android:exported="true"
+365-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:68:13-36
+366            android:process="@string/aliyun_accs_target_process" >
+366-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:69:13-65
+367            <intent-filter>
+367-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:70:13-72:29
+368                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE" />
+368-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:71:17-76
+368-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:71:25-73
+369            </intent-filter>
+370            <intent-filter>
+370-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:73:13-75:29
+371                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED" />
+371-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:74:17-76
+371-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:74:25-73
+372            </intent-filter>
+373            <intent-filter>
+373-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:76:13-78:29
+374                <action android:name="com.xiaomi.mipush.ERROR" />
+374-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:77:17-66
+374-->[com.aliyun.ams:alicloud-android-third-push-xiaomi:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/d8787b53d9ffd1eea38caa8a1e5aefa2/transformed/jetified-alicloud-android-third-push-xiaomi-3.8.7/AndroidManifest.xml:77:25-63
+375            </intent-filter>
+376        </receiver>
+377
+378        <service
+378-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:14:9-21:19
+379            android:name="com.alibaba.sdk.android.push.huawei.HuaweiPushMessageService"
+379-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:15:13-88
+380            android:exported="false"
+380-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:16:13-37
+381            android:process="@string/aliyun_accs_target_process" >
+381-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:17:13-65
+382            <intent-filter>
+382-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:18:13-20:29
+383                <action android:name="com.huawei.push.action.MESSAGING_EVENT" />
+383-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:19:17-81
+383-->[com.aliyun.ams:alicloud-android-third-push-huawei:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/9ee647e2a86b63e05aacf1c1b6b38d43/transformed/jetified-alicloud-android-third-push-huawei-3.8.7/AndroidManifest.xml:19:25-78
+384            </intent-filter>
+385        </service>
+386        <service
+386-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:12:9-19:19
+387            android:name="com.alibaba.sdk.android.push.HonorPushMessageService"
+387-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:13:13-80
+388            android:exported="false"
+388-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:14:13-37
+389            android:process="@string/aliyun_accs_target_process" >
+389-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:15:13-65
+390            <intent-filter>
+390-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:16:13-18:29
+391                <action android:name="com.hihonor.push.action.MESSAGING_EVENT" />
+391-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:17:17-82
+391-->[com.aliyun.ams:alicloud-android-third-push-honor:3.8.7] /Users/liuqi/.gradle/caches/transforms-3/598864483f3ea65f44ed30c19e44cd6a/transformed/jetified-alicloud-android-third-push-honor-3.8.7/AndroidManifest.xml:17:25-79
+392            </intent-filter>
+393        </service>
+394        <service
+394-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:31:9-38:19
+395            android:name="org.android.agoo.accs.AgooService"
+395-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:32:13-61
+396            android:exported="false"
+396-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:33:13-37
+397            android:process="@string/aliyun_accs_target_process" >
+397-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:34:13-65
+398            <intent-filter>
+398-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:35:13-37:29
+399                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+399-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:36:17-80
+399-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:36:25-77
+400            </intent-filter>
+401        </service> <!-- push begin -->
+402        <service
+402-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:41:9-48:19
+403            android:name="com.aliyun.ams.emas.push.AgooInnerService"
+403-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:42:13-69
+404            android:exported="false"
+404-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:43:13-37
+405            android:process="@string/aliyun_accs_target_process" >
+405-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:44:13-65
+406            <intent-filter>
+406-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:45:13-47:29
+407                <action android:name="org.agoo.android.intent.action.RECEIVE" />
+407-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:46:17-81
+407-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:46:25-78
+408            </intent-filter>
+409        </service> <!-- 消息接收服务 -->
+410        <service
+410-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:50:9-57:19
+411            android:name="com.aliyun.ams.emas.push.MsgService"
+411-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:51:13-63
+412            android:exported="false"
+412-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:52:13-37
+413            android:process="@string/aliyun_accs_target_process" >
+413-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:53:13-65
+414            <intent-filter>
+414-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:54:13-56:29
+415                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+415-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:55:17-85
+415-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:55:25-82
+416            </intent-filter>
+417        </service>
+418
+419        <activity
+419-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:59:9-69:20
+420            android:name="com.aliyun.ams.emas.push.NotificationActivity"
+420-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:60:13-73
+421            android:exported="false"
+421-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:61:13-37
+422            android:launchMode="singleInstance"
+422-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:62:13-48
+423            android:noHistory="true"
+423-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:63:13-37
+424            android:process="@string/aliyun_accs_target_process"
+424-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:64:13-65
+425            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+425-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:65:13-72
+426            <intent-filter>
+426-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:54:13-56:29
+427                <action android:name="com.alibaba.sdk.android.push.NOTIFY_ACTION" />
+427-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:55:17-85
+427-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:55:25-82
+428            </intent-filter>
+429        </activity>
+430
+431        <service
+431-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:16:9-18:39
+432            android:name="com.meizu.cloud.pushsdk.NotificationService"
+432-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:17:13-71
+433            android:exported="true" />
+433-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:18:13-36
+434
+435        <receiver
+435-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:20:9-27:20
+436            android:name="com.meizu.cloud.pushsdk.MzPushSystemReceiver"
+436-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:21:13-72
+437            android:exported="false"
+437-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:22:13-37
+438            android:permission="com.meizu.flyme.permission.PUSH" >
+438-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:23:13-65
+439            <intent-filter>
+439-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:24:13-26:29
+440                <action android:name="com.meizu.flyme.push.intent.PUSH_SYSTEM" />
+440-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:25:17-82
+440-->[com.meizu.flyme.internet:push-internal:4.2.3] /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/AndroidManifest.xml:25:25-79
+441            </intent-filter>
+442        </receiver> <!-- 该字段大于等于480，则表示支持点击消息直接打开应用activity，优化启动慢问题。 -->
+443        <meta-data
+443-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:16:9-18:35
+444            android:name="sdk_version_vivo"
+444-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:17:13-44
+445            android:value="488" />
+445-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:18:13-32
+446        <meta-data
+446-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:24:9-26:295
+447            android:name="local_iv"
+447-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:25:13-36
+448            android:value="MzMsMzQsMzUsMzYsMzcsMzgsMzksNDAsNDEsMzIsMzgsMzcsMzYsMzUsMzQsMzMsI0AzNCwzMiwzMywzNywzMywzNCwzMiwzMywzMywzMywzNCw0MSwzNSwzNSwzMiwzMiwjQDMzLDM0LDM1LDM2LDM3LDM4LDM5LDQwLDQxLDMyLDM4LDM3LDMzLDM1LDM0LDMzLCNAMzQsMzIsMzMsMzcsMzMsMzQsMzIsMzMsMzMsMzMsMzQsNDEsMzUsMzIsMzIsMzI" /> <!-- 支持性能监控 -->
+448-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:26:13-292
+449        <meta-data
+449-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:27:9-29:33
+450            android:name="com.vivo.push.support_monitor"
+450-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:28:13-57
+451            android:value="1" />
+451-->[com.aliyun.ams:third_vivopush:3.0.0.7] /Users/liuqi/.gradle/caches/transforms-3/d2398bb7469781157006aa9e7283a522/transformed/jetified-third_vivopush-3.0.0.7/AndroidManifest.xml:29:13-30
+452        <meta-data
+452-->[com.aliyun.ams:opush:3.1.0] /Users/liuqi/.gradle/caches/transforms-3/f4f32c27b874407f39ad923a26515f03/transformed/jetified-opush-3.1.0/AndroidManifest.xml:12:9-14:36
+453            android:name="sdkVersion"
+453-->[com.aliyun.ams:opush:3.1.0] /Users/liuqi/.gradle/caches/transforms-3/f4f32c27b874407f39ad923a26515f03/transformed/jetified-opush-3.1.0/AndroidManifest.xml:13:13-38
+454            android:value="3100" />
+454-->[com.aliyun.ams:opush:3.1.0] /Users/liuqi/.gradle/caches/transforms-3/f4f32c27b874407f39ad923a26515f03/transformed/jetified-opush-3.1.0/AndroidManifest.xml:14:13-33
+455        <meta-data
+455-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:25:9-27:37
+456            android:name="MIPUSH_SDK_VERSION_CODE"
+456-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:26:13-51
+457            android:value="50708" />
+457-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:27:13-34
+458        <meta-data
+458-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:28:9-30:39
+459            android:name="MIPUSH_SDK_VERSION_NAME"
+459-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:29:13-51
+460            android:value="5_7_8-C" /> <!-- 注：此service必须在2.2.5版本以后（包括2.2.5版本）加入 -->
+460-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:30:13-36
+461        <service
+461-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:53:9-55:38
+462            android:name="com.xiaomi.mipush.sdk.MessageHandleService"
+462-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:54:13-70
+463            android:enabled="true" />
+463-->[com.aliyun.ams:xiaomi-push:5.7.8] /Users/liuqi/.gradle/caches/transforms-3/c8c4e0bbdc99146da941584d4169b5fd/transformed/jetified-xiaomi-push-5.7.8/AndroidManifest.xml:55:13-35
+464
+465        <receiver
+465-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:25:9-37:20
+466            android:name="com.huawei.hms.support.api.push.PushMsgReceiver"
+466-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:26:13-75
+467            android:directBootAware="true"
+467-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:27:13-43
+468            android:exported="true"
+468-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:28:13-36
+469            android:permission="com.aliyun.emas.pocdemo.permission.PROCESS_PUSH_MSG" >
+469-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:29:13-78
+470            <intent-filter>
+470-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:30:13-36:29
+471
+472                <!-- Mandatory, be used to receive notification bar message click event. -->
+473                <action android:name="com.huawei.intent.action.PUSH_DELAY_NOTIFY" />
+473-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:33:17-85
+473-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:33:25-82
+474                <!-- Optional, compatible with old huawei phones. -->
+475                <action android:name="com.huawei.intent.action.PUSH" />
+475-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:35:17-72
+475-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:35:25-69
+476            </intent-filter>
+477        </receiver>
+478        <receiver
+478-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:38:9-50:20
+479            android:name="com.huawei.hms.support.api.push.PushReceiver"
+479-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:39:13-72
+480            android:directBootAware="true"
+480-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:40:13-43
+481            android:exported="true"
+481-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:41:13-36
+482            android:permission="com.aliyun.emas.pocdemo.permission.PROCESS_PUSH_MSG" >
+482-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:42:13-78
+483            <intent-filter>
+483-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:43:13-49:29
+484
+485                <!-- Mandatory, be used to receive tokens. -->
+486                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+486-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:46:17-86
+486-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:46:25-83
+487                <!-- Mandatory, be used to receive messages. -->
+488                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+488-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:48:17-81
+488-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:48:25-78
+489            </intent-filter>
+490        </receiver> <!-- Definition of receiving service for notification bar and pass-through message of non-huawei mobile phone. -->
+491        <service
+491-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:53:9-63:19
+492            android:name="com.huawei.hms.support.api.push.service.HmsMsgService"
+492-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:54:13-81
+493            android:directBootAware="true"
+493-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:55:13-43
+494            android:enabled="true"
+494-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:56:13-35
+495            android:exported="true"
+495-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:57:13-36
+496            android:process=":pushservice" >
+496-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:58:13-43
+497            <intent-filter>
+497-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:59:13-62:29
+498                <action android:name="com.huawei.push.msg.NOTIFY_MSG" />
+498-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:60:17-73
+498-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:60:25-70
+499                <action android:name="com.huawei.push.msg.PASSBY_MSG" />
+499-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:61:17-73
+499-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:61:25-70
+500            </intent-filter>
+501        </service>
+502
+503        <provider
+503-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:65:9-70:89
+504            android:name="com.huawei.hms.support.api.push.PushProvider"
+504-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:66:13-72
+505            android:authorities="com.aliyun.emas.pocdemo.huawei.push.provider"
+505-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:67:13-72
+506            android:exported="true"
+506-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:68:13-36
+507            android:readPermission="com.aliyun.emas.pocdemo.permission.PUSH_PROVIDER"
+507-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:69:13-79
+508            android:writePermission="com.aliyun.emas.pocdemo.permission.PUSH_WRITE_PROVIDER" />
+508-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:70:13-86
+509
+510        <meta-data
+510-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:72:9-74:47
+511            android:name="com.huawei.hms.client.service.name:push"
+511-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:73:13-67
+512            android:value="push:6.11.0.300" />
+512-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:74:13-44
+513        <meta-data
+513-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:75:9-77:33
+514            android:name="com.huawei.hms.min_api_level:push:push"
+514-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:76:13-66
+515            android:value="1" />
+515-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:77:13-30
+516
+517        <activity
+517-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:79:9-81:40
+518            android:name="com.huawei.hms.support.api.push.TransActivity"
+518-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:80:13-73
+519            android:exported="false" />
+519-->[com.huawei.hms:push:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/AndroidManifest.xml:81:13-37
+520
+521        <meta-data
+521-->[com.aliyun.ams:honor-push:7.0.61.302] /Users/liuqi/.gradle/caches/transforms-3/357538819e16a802b2f468ca00988b64/transformed/jetified-honor-push-7.0.61.302/AndroidManifest.xml:14:9-16:42
+522            android:name="com.hihonor.push.sdk_version"
+522-->[com.aliyun.ams:honor-push:7.0.61.302] /Users/liuqi/.gradle/caches/transforms-3/357538819e16a802b2f468ca00988b64/transformed/jetified-honor-push-7.0.61.302/AndroidManifest.xml:15:13-56
+523            android:value="7.0.61.302" />
+523-->[com.aliyun.ams:honor-push:7.0.61.302] /Users/liuqi/.gradle/caches/transforms-3/357538819e16a802b2f468ca00988b64/transformed/jetified-honor-push-7.0.61.302/AndroidManifest.xml:16:13-39
+524
+525        <service
+525-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:31:9-39:19
+526            android:name="com.taobao.accs.ChannelService"
+526-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:32:13-58
+527            android:enabled="false"
+527-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:33:13-36
+528            android:exported="false"
+528-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:34:13-37
+529            android:process="@string/aliyun_accs_channel_process" >
+529-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:35:13-66
+530            <intent-filter>
+530-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:36:13-38:29
+531                <action android:name="com.taobao.accs.intent.action.SERVICE" />
+531-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:37:17-80
+531-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:37:25-77
+532            </intent-filter>
+533        </service>
+534        <service
+534-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:40:9-44:69
+535            android:name="com.taobao.accs.ChannelService$KernelService"
+535-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:41:13-72
+536            android:enabled="false"
+536-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:42:13-36
+537            android:exported="false"
+537-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:43:13-37
+538            android:process="@string/aliyun_accs_channel_process" />
+538-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:44:13-66
+539        <service
+539-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:45:9-50:69
+540            android:name="com.taobao.accs.internal.AccsJobService"
+540-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:46:13-67
+541            android:enabled="false"
+541-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:47:13-36
+542            android:exported="false"
+542-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:48:13-37
+543            android:permission="android.permission.BIND_JOB_SERVICE"
+543-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:49:13-69
+544            android:process="@string/aliyun_accs_channel_process" />
+544-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:50:13-66
+545        <service
+545-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:51:9-58:19
+546            android:name="com.taobao.accs.data.MsgDistributeService"
+546-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:52:13-69
+547            android:exported="false"
+547-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:53:13-37
+548            android:process="@string/aliyun_accs_target_process" >
+548-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:54:13-65
+549            <intent-filter>
+549-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:35:13-37:29
+550                <action android:name="com.taobao.accs.intent.action.RECEIVE" />
+550-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:36:17-80
+550-->[com.aliyun.ams:alicloud-android-agoo:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/AndroidManifest.xml:36:25-77
+551            </intent-filter>
+552        </service>
+553
+554        <receiver
+554-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:60:9-79:20
+555            android:name="com.taobao.accs.EventReceiver"
+555-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:61:13-57
+556            android:enabled="false"
+556-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:62:13-36
+557            android:exported="true"
+557-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:63:13-36
+558            android:process="@string/aliyun_accs_channel_process" >
+558-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:64:13-66
+559            <intent-filter>
+559-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:65:13-67:29
+560                <action android:name="android.intent.action.BOOT_COMPLETED" />
+560-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:66:17-79
+560-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:66:25-76
+561            </intent-filter>
+562            <intent-filter>
+562-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:68:13-70:29
+563                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+563-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:69:17-79
+563-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:69:25-76
+564            </intent-filter>
+565            <intent-filter>
+565-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:71:13-75:29
+566                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+566-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:72:17-80
+566-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:72:25-77
+567
+568                <data android:scheme="package" />
+568-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:74:17-50
+568-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:74:23-47
+569            </intent-filter>
+570            <intent-filter>
+570-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:76:13-78:29
+571                <action android:name="android.intent.action.USER_PRESENT" />
+571-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:77:17-77
+571-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:77:25-74
+572            </intent-filter>
+573        </receiver>
+574        <receiver
+574-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:80:9-88:20
+575            android:name="com.taobao.accs.ServiceReceiver"
+575-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:81:13-59
+576            android:enabled="false"
+576-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:82:13-36
+577            android:exported="false"
+577-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:83:13-37
+578            android:process="@string/aliyun_accs_channel_process" >
+578-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:84:13-66
+579            <intent-filter>
+579-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:85:13-87:29
+580                <action android:name="com.taobao.accs.intent.action.COMMAND" />
+580-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:86:17-80
+580-->[com.taobao.android:accs_sdk_taobao:4.7.7-emas] /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/AndroidManifest.xml:86:25-77
+581            </intent-filter>
+582        </receiver>
+583
+584        <provider
+584-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:10:9-14:39
+585            android:name="com.huawei.hms.aaid.InitProvider"
+585-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:11:13-60
+586            android:authorities="com.aliyun.emas.pocdemo.aaidinitprovider"
+586-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:12:13-68
+587            android:exported="false"
+587-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:13:13-37
+588            android:initOrder="500" />
+588-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:14:13-36
+589
+590        <meta-data
+590-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:16:9-18:53
+591            android:name="com.huawei.hms.client.service.name:opendevice"
+591-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:17:13-73
+592            android:value="opendevice:6.11.0.300" />
+592-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:18:13-50
+593        <meta-data
+593-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:19:9-21:33
+594            android:name="com.huawei.hms.min_api_level:opendevice:push"
+594-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:20:13-72
+595            android:value="1" /> <!-- 为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据 -->
+595-->[com.huawei.hms:opendevice:6.11.0.300] /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/AndroidManifest.xml:21:13-30
+596        <meta-data
+596-->[com.huawei.hms:base:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/706cfe72c57f03a869c35366a5845f8a/transformed/jetified-base-6.9.0.300/AndroidManifest.xml:15:9-17:46
+597            android:name="com.huawei.hms.client.service.name:base"
+597-->[com.huawei.hms:base:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/706cfe72c57f03a869c35366a5845f8a/transformed/jetified-base-6.9.0.300/AndroidManifest.xml:16:13-67
+598            android:value="base:6.9.0.300" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+598-->[com.huawei.hms:base:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/706cfe72c57f03a869c35366a5845f8a/transformed/jetified-base-6.9.0.300/AndroidManifest.xml:17:13-43
+599        <meta-data
+599-->[com.huawei.hms:base:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/706cfe72c57f03a869c35366a5845f8a/transformed/jetified-base-6.9.0.300/AndroidManifest.xml:20:9-22:33
+600            android:name="com.huawei.hms.min_api_level:base:hmscore"
+600-->[com.huawei.hms:base:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/706cfe72c57f03a869c35366a5845f8a/transformed/jetified-base-6.9.0.300/AndroidManifest.xml:21:13-69
+601            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+601-->[com.huawei.hms:base:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/706cfe72c57f03a869c35366a5845f8a/transformed/jetified-base-6.9.0.300/AndroidManifest.xml:22:13-30
+602        <meta-data
+602-->[com.huawei.hms:availableupdate:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/752d1f5f35662f1883103c926cb3384e/transformed/jetified-availableupdate-6.9.0.300/AndroidManifest.xml:17:9-19:35
+603            android:name="availableLoaded"
+603-->[com.huawei.hms:availableupdate:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/752d1f5f35662f1883103c926cb3384e/transformed/jetified-availableupdate-6.9.0.300/AndroidManifest.xml:18:13-43
+604            android:value="yes" />
+604-->[com.huawei.hms:availableupdate:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/752d1f5f35662f1883103c926cb3384e/transformed/jetified-availableupdate-6.9.0.300/AndroidManifest.xml:19:13-32
+605
+606        <activity
+606-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:10:9-21:20
+607            android:name="com.huawei.hms.activity.BridgeActivity"
+607-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:11:13-66
+608            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+608-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:12:13-131
+609            android:excludeFromRecents="true"
+609-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:13:13-46
+610            android:exported="false"
+610-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:14:13-37
+611            android:hardwareAccelerated="true"
+611-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:15:13-47
+612            android:screenOrientation="behind"
+612-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:16:13-47
+613            android:theme="@style/Base_Translucent" >
+613-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:17:13-52
+614            <meta-data
+614-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:18:13-20:77
+615                android:name="hwc-theme"
+615-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:19:17-41
+616                android:value="androidhwext:style/Theme.Emui.Translucent" />
+616-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:20:17-74
+617        </activity>
+618        <activity
+618-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:22:9-26:20
+619            android:name="com.huawei.hms.activity.EnableServiceActivity"
+619-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:23:13-73
+620            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+620-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:24:13-106
+621            android:exported="false" >
+621-->[com.huawei.hms:ui:6.9.0.300] /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/AndroidManifest.xml:25:13-37
+622        </activity>
+623
+624        <provider
+624-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:11:9-14:40
+625            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+625-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:12:13-90
+626            android:authorities="com.aliyun.emas.pocdemo.AGCInitializeProvider"
+626-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:13:13-73
+627            android:exported="false" />
+627-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:14:13-37
+628
+629        <service
+629-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:16:9-18:40
+630            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+630-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:17:13-70
+631            android:exported="false" />
+631-->[com.huawei.agconnect:agconnect-core:1.7.3.302] /Users/liuqi/.gradle/caches/transforms-3/1e36d04dafa0be6232e6dae045ef4b30/transformed/jetified-agconnect-core-1.7.3.302/AndroidManifest.xml:18:13-37
+632    </application>
+633
+634</manifest>

@@ -1,0 +1,54 @@
+com.aliyun.emas.pocdemo.app-jetified-core-ktx-1.8.0-0 /Users/liuqi/.gradle/caches/transforms-3/0063812cd4d48f43c88c29c0441ce2d9/transformed/jetified-core-ktx-1.8.0/res
+com.aliyun.emas.pocdemo.app-fragment-1.3.6-1 /Users/liuqi/.gradle/caches/transforms-3/009475ad1e3b80ac1111b584b7f6f8f8/transformed/fragment-1.3.6/res
+com.aliyun.emas.pocdemo.app-jetified-push-internal-4.2.3-2 /Users/liuqi/.gradle/caches/transforms-3/02e305ed8f4aab4b3fc2af496f9e5d37/transformed/jetified-push-internal-4.2.3/res
+com.aliyun.emas.pocdemo.app-jetified-appcompat-resources-1.5.0-3 /Users/liuqi/.gradle/caches/transforms-3/0e7b91965dd023e2f1ba0baefb0821eb/transformed/jetified-appcompat-resources-1.5.0/res
+com.aliyun.emas.pocdemo.app-jetified-emoji2-1.2.0-4 /Users/liuqi/.gradle/caches/transforms-3/1465c8141f1cc97f21281a34d8e68734/transformed/jetified-emoji2-1.2.0/res
+com.aliyun.emas.pocdemo.app-constraintlayout-2.0.1-5 /Users/liuqi/.gradle/caches/transforms-3/1675649934c94a8867736e387770555e/transformed/constraintlayout-2.0.1/res
+com.aliyun.emas.pocdemo.app-drawerlayout-1.1.1-6 /Users/liuqi/.gradle/caches/transforms-3/1fb8749a9f1d1f20bb9969b1ae0f8e30/transformed/drawerlayout-1.1.1/res
+com.aliyun.emas.pocdemo.app-jetified-activity-1.5.0-7 /Users/liuqi/.gradle/caches/transforms-3/21eb46634460024b774dad42bd6ad44e/transformed/jetified-activity-1.5.0/res
+com.aliyun.emas.pocdemo.app-transition-1.2.0-8 /Users/liuqi/.gradle/caches/transforms-3/27f149f98e8a196934f0a0c01a838aff/transformed/transition-1.2.0/res
+com.aliyun.emas.pocdemo.app-jetified-react-android-0.72.0-debug-9 /Users/liuqi/.gradle/caches/transforms-3/2af515a85a36ea7b77e601ca96fa7845/transformed/jetified-react-android-0.72.0-debug/res
+com.aliyun.emas.pocdemo.app-jetified-savedstate-1.2.0-10 /Users/liuqi/.gradle/caches/transforms-3/2ce02bbb3ec2d3c08ba8f39fe4156da8/transformed/jetified-savedstate-1.2.0/res
+com.aliyun.emas.pocdemo.app-jetified-accs_sdk_taobao-4.7.7-emas-11 /Users/liuqi/.gradle/caches/transforms-3/335fcfdf9c2fec24b0a9f663949e2fb5/transformed/jetified-accs_sdk_taobao-4.7.7-emas/res
+com.aliyun.emas.pocdemo.app-recyclerview-1.1.0-12 /Users/liuqi/.gradle/caches/transforms-3/38c771e43e3d7918fea1ac1b63a2610d/transformed/recyclerview-1.1.0/res
+com.aliyun.emas.pocdemo.app-lifecycle-viewmodel-2.5.0-13 /Users/liuqi/.gradle/caches/transforms-3/3ce79538d1a0e23133705e7b567d850e/transformed/lifecycle-viewmodel-2.5.0/res
+com.aliyun.emas.pocdemo.app-coordinatorlayout-1.2.0-14 /Users/liuqi/.gradle/caches/transforms-3/406d929e20c23da27f998fdee54ae835/transformed/coordinatorlayout-1.2.0/res
+com.aliyun.emas.pocdemo.app-core-1.8.0-15 /Users/liuqi/.gradle/caches/transforms-3/4147f26a61fb6196770ea38e58daddf3/transformed/core-1.8.0/res
+com.aliyun.emas.pocdemo.app-jetified-viewpager2-1.0.0-16 /Users/liuqi/.gradle/caches/transforms-3/4c9158d8e99590720e6250d25b3c2568/transformed/jetified-viewpager2-1.0.0/res
+com.aliyun.emas.pocdemo.app-jetified-ui-6.9.0.300-17 /Users/liuqi/.gradle/caches/transforms-3/5226b23dd98a956fa78f52a865ddeda2/transformed/jetified-ui-6.9.0.300/res
+com.aliyun.emas.pocdemo.app-jetified-opendevice-6.11.0.300-18 /Users/liuqi/.gradle/caches/transforms-3/6a2105a213cbfc7ab4ed670118b6209f/transformed/jetified-opendevice-6.11.0.300/res
+com.aliyun.emas.pocdemo.app-jetified-play-services-base-18.0.1-19 /Users/liuqi/.gradle/caches/transforms-3/77807ca543432c5fe60364567061d728/transformed/jetified-play-services-base-18.0.1/res
+com.aliyun.emas.pocdemo.app-jetified-flipper-0.125.0-20 /Users/liuqi/.gradle/caches/transforms-3/7791fe77b8ab9730d0e25ce55c6aa090/transformed/jetified-flipper-0.125.0/res
+com.aliyun.emas.pocdemo.app-cardview-1.0.0-21 /Users/liuqi/.gradle/caches/transforms-3/7ac1297a65d7e60cab9847fc28b2b130/transformed/cardview-1.0.0/res
+com.aliyun.emas.pocdemo.app-lifecycle-livedata-core-2.5.0-22 /Users/liuqi/.gradle/caches/transforms-3/7f2055b0ef4accb15ba85abf451cb30d/transformed/lifecycle-livedata-core-2.5.0/res
+com.aliyun.emas.pocdemo.app-jetified-autofill-1.1.0-23 /Users/liuqi/.gradle/caches/transforms-3/8a384341752d328d6389029a8be9e815/transformed/jetified-autofill-1.1.0/res
+com.aliyun.emas.pocdemo.app-jetified-play-services-basement-18.0.0-24 /Users/liuqi/.gradle/caches/transforms-3/8c45b2f617d58504dcf0b1bc86086a24/transformed/jetified-play-services-basement-18.0.0/res
+com.aliyun.emas.pocdemo.app-swiperefreshlayout-1.1.0-25 /Users/liuqi/.gradle/caches/transforms-3/9f3f2c3188f38327ba24fabea0cd84f7/transformed/swiperefreshlayout-1.1.0/res
+com.aliyun.emas.pocdemo.app-jetified-push-6.11.0.300-26 /Users/liuqi/.gradle/caches/transforms-3/a25b21a4193041d26c4c1e5d4fda4654/transformed/jetified-push-6.11.0.300/res
+com.aliyun.emas.pocdemo.app-jetified-startup-runtime-1.1.1-27 /Users/liuqi/.gradle/caches/transforms-3/a4c840c160268a1ca6a325e3c4345dc9/transformed/jetified-startup-runtime-1.1.1/res
+com.aliyun.emas.pocdemo.app-jetified-lifecycle-process-2.4.1-28 /Users/liuqi/.gradle/caches/transforms-3/ae27995e6287e7fd33ae4364afb490c1/transformed/jetified-lifecycle-process-2.4.1/res
+com.aliyun.emas.pocdemo.app-appcompat-1.5.0-29 /Users/liuqi/.gradle/caches/transforms-3/af07af661f19142a150455c3df7d3247/transformed/appcompat-1.5.0/res
+com.aliyun.emas.pocdemo.app-jetified-annotation-experimental-1.1.0-30 /Users/liuqi/.gradle/caches/transforms-3/b36df8da1dd3422e7688e01fe20caa41/transformed/jetified-annotation-experimental-1.1.0/res
+com.aliyun.emas.pocdemo.app-jetified-lifecycle-viewmodel-savedstate-2.5.0-31 /Users/liuqi/.gradle/caches/transforms-3/b785cd3da04cefbc518262ddcdada35c/transformed/jetified-lifecycle-viewmodel-savedstate-2.5.0/res
+com.aliyun.emas.pocdemo.app-material-1.9.0-32 /Users/liuqi/.gradle/caches/transforms-3/bc984b4c216b046fb814ced4c0f10e24/transformed/material-1.9.0/res
+com.aliyun.emas.pocdemo.app-jetified-alicloud-android-third-push-3.8.7-33 /Users/liuqi/.gradle/caches/transforms-3/cb488477bef354de8e4439251292b8ac/transformed/jetified-alicloud-android-third-push-3.8.7/res
+com.aliyun.emas.pocdemo.app-jetified-tracing-1.1.0-34 /Users/liuqi/.gradle/caches/transforms-3/cbe5f1c83f5a2c5ce0737dee20bbdd1b/transformed/jetified-tracing-1.1.0/res
+com.aliyun.emas.pocdemo.app-jetified-alicloud-android-push-3.8.7-35 /Users/liuqi/.gradle/caches/transforms-3/d028a592b210cf15b8e352c0749b1bfa/transformed/jetified-alicloud-android-push-3.8.7/res
+com.aliyun.emas.pocdemo.app-lifecycle-runtime-2.5.0-36 /Users/liuqi/.gradle/caches/transforms-3/d26963da508089bcf5f31fdeab2e79f1/transformed/lifecycle-runtime-2.5.0/res
+com.aliyun.emas.pocdemo.app-jetified-emoji2-views-helper-1.2.0-37 /Users/liuqi/.gradle/caches/transforms-3/daba213ff0ef2376223f769d2d3b9907/transformed/jetified-emoji2-views-helper-1.2.0/res
+com.aliyun.emas.pocdemo.app-jetified-firebase-messaging-23.0.3-38 /Users/liuqi/.gradle/caches/transforms-3/e7d12349d1cbbff717c478a220b6652c/transformed/jetified-firebase-messaging-23.0.3/res
+com.aliyun.emas.pocdemo.app-jetified-alicloud-android-rest-1.6.5-open-39 /Users/liuqi/.gradle/caches/transforms-3/e8f8b6d745266da046a2f9b6f99ffaca/transformed/jetified-alicloud-android-rest-1.6.5-open/res
+com.aliyun.emas.pocdemo.app-jetified-drawee-2.6.0-40 /Users/liuqi/.gradle/caches/transforms-3/f207e6818cb03f8f52a7c04d20776d52/transformed/jetified-drawee-2.6.0/res
+com.aliyun.emas.pocdemo.app-jetified-opush-3.1.0-41 /Users/liuqi/.gradle/caches/transforms-3/f4f32c27b874407f39ad923a26515f03/transformed/jetified-opush-3.1.0/res
+com.aliyun.emas.pocdemo.app-jetified-alicloud-android-agoo-4.7.7-emas-42 /Users/liuqi/.gradle/caches/transforms-3/f540e63cbf83e43e7e2d7b94fa7be0c9/transformed/jetified-alicloud-android-agoo-4.7.7-emas/res
+com.aliyun.emas.pocdemo.app-packaged_res-43 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/android/build/intermediates/packaged_res/debug
+com.aliyun.emas.pocdemo.app-pngs-44 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/pngs/debug
+com.aliyun.emas.pocdemo.app-resValues-45 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/resValues/debug
+com.aliyun.emas.pocdemo.app-rs-46 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/generated/res/rs/debug
+com.aliyun.emas.pocdemo.app-mergeDebugResources-47 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/intermediates/incremental/debug/mergeDebugResources/merged.dir
+com.aliyun.emas.pocdemo.app-mergeDebugResources-48 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/intermediates/incremental/debug/mergeDebugResources/stripped.dir
+com.aliyun.emas.pocdemo.app-merged_res-49 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/build/intermediates/merged_res/debug
+com.aliyun.emas.pocdemo.app-debug-50 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/debug/res
+com.aliyun.emas.pocdemo.app-main-51 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/android/app/src/main/res
+com.aliyun.emas.pocdemo.app-packaged_res-52 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/node_modules/react-native-safe-area-context/android/build/intermediates/packaged_res/debug
+com.aliyun.emas.pocdemo.app-packaged_res-53 /Users/liuqi/Downloads/alibabacloud-push-reactnative-plugin-master 2/example/node_modules/react-native-screens/android/build/intermediates/packaged_res/debug

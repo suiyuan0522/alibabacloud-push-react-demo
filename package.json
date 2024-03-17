@@ -2,6 +2,7 @@
   "name": "aliyun-push-react-native-example",
   "version": "0.0.1",
   "private": true,
+  "source": "src/index",
   "scripts": {
     "android": "react-native run-android",
     "ios": "react-native run-ios",
@@ -11,6 +12,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.1.6",
     "@react-navigation/native-stack": "^6.9.12",
+    "aliyun-react-native-push": "^0.9.0",
     "react": "18.2.0",
     "react-native": "0.72.0",
     "react-native-dropdown-picker": "^5.4.4",
@@ -25,5 +27,9 @@
     "@babel/traverse": "7.22.6",
     "babel-plugin-module-resolver": "^5.0.0",
     "metro-react-native-babel-preset": "0.76.8"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-native": "*"
   }
 }

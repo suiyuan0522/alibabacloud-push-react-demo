@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Platform, Text } from 'react-native';
 
-import { StyleSheet, SafeAreaView, View, Button, Alert } from 'react-native';
+import { StyleSheet, SafeAreaView, View, Button, Alert,ToastAndroid } from 'react-native';
 import * as AliyunPush from 'aliyun-react-native-push';
 
 import { NavigationContainer } from '@react-navigation/native';
@@ -119,38 +119,47 @@ export default class App extends React.Component {
   componentDidMount(): void {
     AliyunPush.addNotificationCallback((event) => {
       console.log('onNotification: ', event);
+      ToastAndroid.show('onNotification: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addNotificationReceivedInApp((event) => {
       console.log('onNotificationReceivedInApp: ', event);
+      ToastAndroid.show('onNotificationReceivedInApp: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addMessageCallback((event) => {
       console.log('onMessage: ', event);
+      ToastAndroid.show('onMessage: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addNotificationOpenedCallback((event) => {
       console.log('onNotificationOpen: ', event);
+      ToastAndroid.show('onNotificationOpen: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addNotificationRemovedCallback((event) => {
       console.log('onNotificationRemoved: ', event);
+      ToastAndroid.show('onNotificationRemoved: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addNotificationClickedWithNoAction((event) => {
       console.log('onNotificationClickedWithNoAction: ', event);
+      ToastAndroid.show('onNotificationClickedWithNoAction: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addChannelOpenCallback((event) => {
       console.log('onChannelOpen: ', event);
+      ToastAndroid.show('onChannelOpen: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addRegisterDeviceTokenSuccessCallback((event) => {
       console.log('onRegisterDeviceTokenSuccess: ', event);
+      ToastAndroid.show('onRegisterDeviceTokenSuccess: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     AliyunPush.addRegisterDeviceTokenFailedCallback((event) => {
       console.log('onRegisterDeviceTokenFailed: ', event);
+      ToastAndroid.show('onRegisterDeviceTokenFailed: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
     });
 
     if (Platform.OS !== 'ios') {

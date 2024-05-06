@@ -6,6 +6,7 @@ import {
     SafeAreaView,
     TextInput,
     Alert,
+    ScrollView
 } from 'react-native';
 import DropDownPicker from 'react-native-dropdown-picker';
 
@@ -161,74 +162,77 @@ const AndroidPage = () => {
     };
 
     return (
-        <SafeAreaView style={styles.container}>
-            {/* <ScrollView> */}
-            <View style={styles.list}>
-                <Button title="关闭AliyunPush Log" onPress={closePushLog} />
-            </View>
-            <View style={styles.list}>
-                <DropDownPicker
+      <ScrollView contentContainerStyle={styles.contentContainer}>
+          <SafeAreaView style={styles.container}>
+              {/* <ScrollView> */}
+              <View style={styles.list}>
+                  <Button title="关闭AliyunPush Log" onPress={closePushLog} />
+              </View>
+              <View style={styles.list}>
+                  <DropDownPicker
                     open={open}
                     value={logLevel}
                     items={items}
                     setOpen={setOpen}
                     setValue={setLogLevel}
                     setItems={setItems}
-                />
-            </View>
-            <View style={styles.list}>
-                <Button
+                  />
+              </View>
+              <View style={styles.list}>
+                  <Button
                     title={`设置LogLevel为${logLevel}`}
                     onPress={setAndroidLogLevel}
-                />
-            </View>
-            <TextInput
+                  />
+              </View>
+              <TextInput
                 style={styles.input}
                 onChangeText={onChangePhone}
                 value={phone}
                 placeholder="输入手机号码"
                 keyboardType="numeric"
                 placeholderTextColor="#000000"
-            />
-            <View style={styles.list}>
-                <Button title="绑定手机号码" onPress={bindPhoneNumber} />
-            </View>
-            <View style={styles.list}>
-                <Button title="解绑手机号码" onPress={unbindPhoneNumber} />
-            </View>
-            <View style={styles.list}>
-                <Button title="开启通知分组展示" onPress={openNotificationInGroup} />
-            </View>
-            <View style={styles.list}>
-                <Button title="开启通知分组展示" onPress={closeNotificationInGroup} />
-            </View>
-            <View style={styles.list}>
-                <Button title="清除所有通知" onPress={clearAllNotifications} />
-            </View>
-            <TextInput
+              />
+              <View style={styles.list}>
+                  <Button title="绑定手机号码" onPress={bindPhoneNumber} />
+              </View>
+              <View style={styles.list}>
+                  <Button title="解绑手机号码" onPress={unbindPhoneNumber} />
+              </View>
+              <View style={styles.list}>
+                  <Button title="开启通知分组展示" onPress={openNotificationInGroup} />
+              </View>
+              <View style={styles.list}>
+                  <Button title="开启通知分组展示" onPress={closeNotificationInGroup} />
+              </View>
+              <View style={styles.list}>
+                  <Button title="清除所有通知" onPress={clearAllNotifications} />
+              </View>
+              <TextInput
                 style={styles.input}
                 onChangeText={onChangeChannel}
                 value={channel}
                 placeholder="输入通道名称"
                 placeholderTextColor="#000000"
-            />
-            <View style={styles.list}>
-                <Button title="创建NotificationChannel" onPress={createChannel} />
-            </View>
-            <View style={styles.list}>
-                <Button title="检查通知状态" onPress={checkNotification} />
-            </View>
-            <View style={styles.list}>
-                <Button title="检查通知通道状态" onPress={checkNotificationChannel} />
-            </View>
-            <View style={styles.list}>
-                <Button
+              />
+              <View style={styles.list}>
+                  <Button title="创建NotificationChannel" onPress={createChannel} />
+              </View>
+              <View style={styles.list}>
+                  <Button title="检查通知状态" onPress={checkNotification} />
+              </View>
+              <View style={styles.list}>
+                  <Button title="检查通知通道状态" onPress={checkNotificationChannel} />
+              </View>
+              <View style={styles.list}>
+                  <Button
                     title="跳转通知通道设置界面"
                     onPress={jumpToNotificationSettings}
-                />
-            </View>
-            {/* </ScrollView> */}
-        </SafeAreaView>
+                  />
+              </View>
+              {/* </ScrollView> */}
+          </SafeAreaView>
+      </ScrollView>
+
     );
 };
 
@@ -253,6 +257,9 @@ const styles = StyleSheet.create({
         borderWidth: 1,
         padding: 10,
     },
+    contentContainer: {
+        paddingVertical: 20
+    }
 });
 
 export default AndroidPage;

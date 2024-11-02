@@ -27,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
 			protected List<ReactPackage> getPackages() {
 				@SuppressWarnings("UnnecessaryLocalVariable")
 				List<ReactPackage> packages = new PackageList(this).getPackages();
+				packages.add(mCommPackage);
 				// Packages that cannot be autolinked yet can be added manually here, for example:
 				return packages;
 			}
@@ -52,6 +53,7 @@ public class MainApplication extends Application implements ReactApplication {
 		return mReactNativeHost;
 	}
 
+	private static final ThirdPushPackage mCommPackage = new ThirdPushPackage();
 	@Override
 	public void onCreate() {
 		super.onCreate();

@@ -28,10 +28,10 @@ const AndroidPage = () => {
         AliyunPush.closeAndroidPushLog().then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert('成功关闭Log👋');
+                Alert.alert('closeAndroidPushLog','成功关闭Log');
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`关闭Log失败, error: ${errorMsg}`);
+                Alert.alert('closeAndroidPushLog',`关闭Log失败, error: ${errorMsg}`);
             }
         });
     };
@@ -48,10 +48,10 @@ const AndroidPage = () => {
         AliyunPush.setAndroidLogLevel(level).then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert(`成功设置LogLvel为${logLevel} 👋`);
+                Alert.alert('setAndroidLogLevel',`成功设置LogLvel为${logLevel} `);
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`设置LogLevel为${logLevel}失败, error: ${errorMsg}`);
+                Alert.alert('setAndroidLogLevel',`设置LogLevel为${logLevel}失败, error: ${errorMsg}`);
             }
         });
     };
@@ -63,10 +63,10 @@ const AndroidPage = () => {
             AliyunPush.bindPhoneNumber(phone).then((result) => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
-                    Alert.alert(`绑定${phone}成功👋`);
+                    Alert.alert('bindPhoneNumber',`绑定${phone}成功`);
                 } else {
                     let errorMsg = result.errorMsg;
-                    Alert.alert(`绑定${phone}失败, error: ${errorMsg}`);
+                    Alert.alert('bindPhoneNumber',`绑定${phone}失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -76,10 +76,10 @@ const AndroidPage = () => {
         AliyunPush.unbindPhoneNumber().then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert('解绑手机号码成功👋');
+                Alert.alert('unbindPhoneNumber','解绑手机号码成功');
             } else {
                 let errorMsg = result.errorMsg;
-                Alert.alert(`解绑手机号码失败, error: ${errorMsg}`);
+                Alert.alert('unbindPhoneNumber',`解绑手机号码失败, error: ${errorMsg}`);
             }
         });
     };
@@ -88,10 +88,10 @@ const AndroidPage = () => {
         AliyunPush.setNotificationInGroup(true).then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert('开启通知分组展示成功👋');
+                Alert.alert('setNotificationInGroup','开启通知分组展示成功');
             } else {
                 let errorMsg = result.errorMsg;
-                Alert.alert(`开启通知分组展示失败, error: ${errorMsg}`);
+                Alert.alert('setNotificationInGroup',`开启通知分组展示失败, error: ${errorMsg}`);
             }
         });
     };
@@ -100,10 +100,10 @@ const AndroidPage = () => {
         AliyunPush.setNotificationInGroup(false).then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert('关闭通知分组展示成功👋');
+                Alert.alert('setNotificationInGroup','关闭通知分组展示成功');
             } else {
                 let errorMsg = result.errorMsg;
-                Alert.alert(`关闭通知分组展示失败, error: ${errorMsg}`);
+                Alert.alert('setNotificationInGroup',`关闭通知分组展示失败, error: ${errorMsg}`);
             }
         });
     };
@@ -112,17 +112,17 @@ const AndroidPage = () => {
         AliyunPush.clearAndroidNotifications().then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert('清除所有通知成功👋');
+                Alert.alert('clearAndroidNotifications','清除所有通知成功');
             } else {
                 let errorMsg = result.errorMsg;
-                Alert.alert(`清除所有通知失败, error: ${errorMsg}`);
+                Alert.alert('clearAndroidNotifications',`清除所有通知失败, error: ${errorMsg}`);
             }
         });
     };
 
     const createChannel = () => {
         if (channel === '') {
-            Alert.alert('请输入Channel名称');
+            Alert.alert('createChannel','请输入Channel名称');
         } else {
             AliyunPush.createAndroidChannel({
                 id: channel,
@@ -132,10 +132,10 @@ const AndroidPage = () => {
             }).then((result) => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
-                    Alert.alert(`创建通道${channel}c成功👋`);
+                    Alert.alert('createAndroidChannel',`创建通道${channel}c成功`);
                 } else {
                     let errorMsg = result.errorMsg;
-                    Alert.alert(`创建通道${channel}失败, error: ${errorMsg}`);
+                    Alert.alert('createAndroidChannel',`创建通道${channel}失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -143,16 +143,16 @@ const AndroidPage = () => {
 
     const checkNotification = () => {
         AliyunPush.isAndroidNotificationEnabled().then((result) => {
-            Alert.alert(`通知状态: ${result}`);
+            Alert.alert('isAndroidNotificationEnabled',`通知状态: ${result}`);
         });
     };
 
     const checkNotificationChannel = () => {
         if (channel === '') {
-            Alert.alert('请输入Channel名称');
+            Alert.alert('checkNotificationChannel','请输入Channel名称');
         } else {
             AliyunPush.isAndroidNotificationEnabled(channel).then((result) => {
-                Alert.alert(`${channel}通道状态: ${result}`);
+                Alert.alert('checkNotificationChannel',`${channel}通道状态: ${result}`);
             });
         }
     };

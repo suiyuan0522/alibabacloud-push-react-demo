@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Platform, Text } from 'react-native';
+import { DeviceEventEmitter, NativeModules, Platform, Text } from 'react-native';
 
 import { StyleSheet, SafeAreaView, View, Button, Alert,ToastAndroid } from 'react-native';
 import * as AliyunPush from 'aliyun-react-native-push';
@@ -19,10 +19,10 @@ const HomeScreen = ({ navigation }) => {
         (result) => {
           let code = result.code;
           if (code === AliyunPush.kAliyunPushSuccessCode) {
-            Alert.alert('Init iOS AliyunPush successfully👋');
+            Alert.alert('initPush','Init iOS AliyunPush successfully');
           } else {
             let errorMsg = result.errorMsg?.toString();
-            Alert.alert(`Failed to Init iOS AliyunPush, errorMsg: ${errorMsg}`);
+            Alert.alert('initPush',`Failed to Init iOS AliyunPush, errorMsg: ${errorMsg}`);
           }
         }
       );
@@ -31,11 +31,11 @@ const HomeScreen = ({ navigation }) => {
         .then((result) => {
           let code = result.code;
           if (code === AliyunPush.kAliyunPushSuccessCode) {
-            Alert.alert('Init Android AliyunPush successfully👋');
+            Alert.alert('initPush','Init Android AliyunPush successfully');
           } else {
             let errorMsg = result.errorMsg?.toString();
             Alert.alert(
-              `Failed to Init Android AliyunPush, errorMsg: ${errorMsg}`
+              'initPush',`Failed to Init Android AliyunPush, errorMsg: ${errorMsg}`
             );
           }
         })
@@ -50,10 +50,10 @@ const HomeScreen = ({ navigation }) => {
       console.log(result);
       let code = result.code;
       if (code === AliyunPush.kAliyunPushSuccessCode) {
-        Alert.alert('Init Android AliyunPush successfully👋');
+        Alert.alert('initAndroidThirdPush','Init Android AliyunPush successfully');
       } else {
         let errorMsg = result.errorMsg?.toString();
-        Alert.alert(`Failed to Init Android AliyunPush, errorMsg: ${errorMsg}`);
+        Alert.alert('initAndroidThirdPush',`Failed to Init Android AliyunPush, errorMsg: ${errorMsg}`);
       }
     });
   };
@@ -61,7 +61,7 @@ const HomeScreen = ({ navigation }) => {
   const getDeviceId = () => {
     AliyunPush.getDeviceId().then((deviceId) => {
       if (deviceId === null) {
-        Alert.alert(`deviceId is null, please init AliyunPush first`);
+        Alert.alert('getDeviceId',`deviceId is null, please init AliyunPush first`);
       } else {
         setDeviceId(deviceId);
       }
@@ -117,49 +117,59 @@ const HomeScreen = ({ navigation }) => {
 const Stack = createNativeStackNavigator();
 export default class App extends React.Component {
   componentDidMount(): void {
+    NativeModules.ThirdPushModule.onSysNoticeOpened((result) => {
+      DeviceEventEmitter.addListener(
+        'ThirdPush_onSysNoticeOpened',
+        (event) => {
+          console.log('onSysNoticeOpened: event', event);
+        }
+      );
+      console.log('onSysNoticeOpened: ', result);
+    });
+
     AliyunPush.addNotificationCallback((event) => {
       console.log('onNotification: ', event);
-      ToastAndroid.show('onNotification: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onNotification',JSON.stringify(event));
     });
 
     AliyunPush.addNotificationReceivedInApp((event) => {
       console.log('onNotificationReceivedInApp: ', event);
-      ToastAndroid.show('onNotificationReceivedInApp: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onNotificationReceivedInApp',JSON.stringify(event));
     });
 
     AliyunPush.addMessageCallback((event) => {
       console.log('onMessage: ', event);
-      ToastAndroid.show('onMessage: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onMessage',JSON.stringify(event));
     });
 
     AliyunPush.addNotificationOpenedCallback((event) => {
       console.log('onNotificationOpen: ', event);
-      ToastAndroid.show('onNotificationOpen: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onNotificationOpen',JSON.stringify(event));
     });
 
     AliyunPush.addNotificationRemovedCallback((event) => {
       console.log('onNotificationRemoved: ', event);
-      ToastAndroid.show('onNotificationRemoved: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onNotificationRemoved',JSON.stringify(event));
     });
 
     AliyunPush.addNotificationClickedWithNoAction((event) => {
       console.log('onNotificationClickedWithNoAction: ', event);
-      ToastAndroid.show('onNotificationClickedWithNoAction: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onNotificationClickedWithNoAction',JSON.stringify(event));
     });
 
     AliyunPush.addChannelOpenCallback((event) => {
       console.log('onChannelOpen: ', event);
-      ToastAndroid.show('onChannelOpen: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onChannelOpen',JSON.stringify(event));
     });
 
     AliyunPush.addRegisterDeviceTokenSuccessCallback((event) => {
       console.log('onRegisterDeviceTokenSuccess: ', event);
-      ToastAndroid.show('onRegisterDeviceTokenSuccess: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onRegisterDeviceTokenSuccess',JSON.stringify(event));
     });
 
     AliyunPush.addRegisterDeviceTokenFailedCallback((event) => {
       console.log('onRegisterDeviceTokenFailed: ', event);
-      ToastAndroid.show('onRegisterDeviceTokenFailed: \n\t'+JSON.stringify(event),ToastAndroid.SHORT);
+      Alert.alert('onRegisterDeviceTokenFailed',JSON.stringify(event));
     });
 
     if (Platform.OS !== 'ios') {
@@ -204,3 +214,4 @@ const styles = StyleSheet.create({
     marginHorizontal: 30,
   },
 });
+

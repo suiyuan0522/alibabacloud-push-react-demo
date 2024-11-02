@@ -25,17 +25,17 @@ const CommonPage = () => {
 
     const bindAccount = () => {
         if (account === '') {
-            Alert.alert('请输入要绑定的账号');
+            Alert.alert('bindAccount','请输入要绑定的账号');
         } else {
             AliyunPush.bindAccount(account).then((result) => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
-                    Alert.alert(`绑定账户:${account}成功👋`);
+                    Alert.alert('bindAccount',`绑定账户:${account}成功`);
                     setAccount('');
                     setBoundAccount(account);
                 } else {
                     let errorMsg = result.errorMsg?.toString();
-                    Alert.alert(`绑定账户:${account}失败, error: ${errorMsg}`);
+                    Alert.alert('bindAccount',`绑定账户:${account}失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -45,27 +45,27 @@ const CommonPage = () => {
         AliyunPush.unbindAccount().then((result) => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert(`解绑账户成功👋`);
+                Alert.alert('unbindAccount',`解绑账户成功`);
                 setAccount('');
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`解绑账户失败, error: ${errorMsg}`);
+                Alert.alert('unbindAccount',`解绑账户失败, error: ${errorMsg}`);
             }
         });
     };
 
     const addAlias = () => {
         if (aliasAdded === '') {
-            Alert.alert('请输入要添加的别名');
+            Alert.alert('addAlias','请输入要添加的别名');
         } else {
             AliyunPush.addAlias(aliasAdded).then((result) => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
-                    Alert.alert(`添加别名成功👋`);
+                    Alert.alert('addAlias',`添加别名成功`);
                     setAliasAdded('');
                 } else {
                     let errorMsg = result.errorMsg?.toString();
-                    Alert.alert(`添加别名失败, error: ${errorMsg}`);
+                    Alert.alert('addAlias',`添加别名失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -73,16 +73,16 @@ const CommonPage = () => {
 
     const removeAlias = () => {
         if (aliasRemoved === '') {
-            Alert.alert('请输入要删除的别名');
+            Alert.alert('removeAlias','请输入要删除的别名');
         } else {
             AliyunPush.removeAlias(aliasRemoved).then((result) => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
-                    Alert.alert(`删除别名成功👋`);
+                    Alert.alert('removeAlias',`删除别名成功`);
                     setAliasRemoved('');
                 } else {
                     let errorMsg = result.errorMsg?.toString();
-                    Alert.alert(`删除别名失败, error: ${errorMsg}`);
+                    Alert.alert('removeAlias',`删除别名失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -94,18 +94,18 @@ const CommonPage = () => {
             if (code === AliyunPush.kAliyunPushSuccessCode) {
                 let aliasList = result.aliasList;
                 if (aliasList !== null && aliasList !== undefined) {
-                    Alert.alert(`查询别名列表结果为: ${aliasList}`);
+                    Alert.alert('listAlias',`查询别名列表结果为: ${aliasList}`);
                 }
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`查询别名列表失败, error: ${errorMsg}`);
+                Alert.alert('listAlias',`查询别名列表失败, error: ${errorMsg}`);
             }
         });
     };
 
     const addDeviceTag = () => {
         if (deviceTag === '') {
-            Alert.alert('请输入要添加的设备标签');
+            Alert.alert('addDeviceTag','请输入要添加的设备标签');
         } else {
             let tags = [];
             tags.push(deviceTag);
@@ -113,11 +113,11 @@ const CommonPage = () => {
                 (result) => {
                     let code = result.code;
                     if (code === AliyunPush.kAliyunPushSuccessCode) {
-                        Alert.alert(`添加设备标签 ${deviceTag} 成功👋`);
+                        Alert.alert('bindTag',`添加设备标签 ${deviceTag} 成功`);
                         setDeviceTag('');
                     } else {
                         let errorMsg = result.errorMsg?.toString();
-                        Alert.alert(`添加设备标签 ${deviceTag} 失败, error: ${errorMsg}`);
+                        Alert.alert('bindTag',`添加设备标签 ${deviceTag} 失败, error: ${errorMsg}`);
                     }
                 }
             );
@@ -126,7 +126,7 @@ const CommonPage = () => {
 
     const removeDeviceTag = () => {
         if (deviceTagRemoved === '') {
-            Alert.alert('请输入要删除的设备标签');
+            Alert.alert('removeDeviceTag','请输入要删除的设备标签');
         } else {
             let tags = [];
             tags.push(deviceTagRemoved);
@@ -134,12 +134,12 @@ const CommonPage = () => {
                 (result) => {
                     let code = result.code;
                     if (code === AliyunPush.kAliyunPushSuccessCode) {
-                        Alert.alert(`删除设备标签 ${deviceTagRemoved} 成功👋`);
+                        Alert.alert('removeDeviceTag',`删除设备标签 ${deviceTagRemoved} 成功`);
                         setDeviceTagRemoved('');
                     } else {
                         let errorMsg = result.errorMsg;
                         Alert.alert(
-                            `删除设备标签 ${deviceTagRemoved} 失败, error: ${errorMsg}`
+                          'removeDeviceTag',`删除设备标签 ${deviceTagRemoved} 失败, error: ${errorMsg}`
                         );
                     }
                 }
@@ -153,19 +153,19 @@ const CommonPage = () => {
             if (code === AliyunPush.kAliyunPushSuccessCode) {
                 let tagList = result.tagsList;
                 if (tagList !== null && tagList !== undefined) {
-                    Alert.alert(`查询设备标签列表结果为: ${tagList}`);
+                    Alert.alert('listTags',`查询设备标签列表结果为: ${tagList}`);
                 }
                 console.log('result is: ', result);
             } else {
                 let errorMsg = result.errorMsg;
-                Alert.alert(`查询设备标签列表失败, error: ${errorMsg}`);
+                Alert.alert('listTags',`查询设备标签列表失败, error: ${errorMsg}`);
             }
         });
     };
 
     const addAcountTag = () => {
         if (accountTag === '') {
-            Alert.alert('请输入要添加的账号标签');
+            Alert.alert('addAcountTag','请输入要添加的账号标签');
         } else {
             let tags = [];
             tags.push(accountTag);
@@ -173,11 +173,11 @@ const CommonPage = () => {
                 (result) => {
                     let code = result.code;
                     if (code === AliyunPush.kAliyunPushSuccessCode) {
-                        Alert.alert(`添加账号标签 ${accountTag} 成功👋`);
+                        Alert.alert('addAcountTag',`添加账号标签 ${accountTag} 成功`);
                         setAccountTag('');
                     } else {
                         let errorMsg = result.errorMsg;
-                        Alert.alert(`添加账号标签 ${accountTag} 失败, error: ${errorMsg}`);
+                        Alert.alert('addAcountTag',`添加账号标签 ${accountTag} 失败, error: ${errorMsg}`);
                     }
                 }
             );
@@ -186,7 +186,7 @@ const CommonPage = () => {
 
     const removeAccountTag = () => {
         if (accountTagRemoved === '') {
-            Alert.alert('请输入要删除的账号标签');
+            Alert.alert('removeAccountTag','请输入要删除的账号标签');
         } else {
             let tags = [];
             tags.push(accountTagRemoved);
@@ -194,12 +194,12 @@ const CommonPage = () => {
                 (result) => {
                     let code = result.code;
                     if (code === AliyunPush.kAliyunPushSuccessCode) {
-                        Alert.alert(`删除账号标签 ${accountTagRemoved} 成功👋`);
+                        Alert.alert('removeAccountTag',`删除账号标签 ${accountTagRemoved} 成功`);
                         setAccountTagRemoved('');
                     } else {
                         let errorMsg = result.errorMsg;
                         Alert.alert(
-                            `删除设备标签 ${accountTagRemoved} 失败, error: ${errorMsg}`
+                          'removeAccountTag',`删除设备标签 ${accountTagRemoved} 失败, error: ${errorMsg}`
                         );
                     }
                 }

@@ -13,26 +13,26 @@ const IOSPage = () => {
         AliyunPush.turnOnIOSDebug().then(result => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
-                Alert.alert('打开Debug日志成功👋');
+                Alert.alert('turnOnIOSDebug','打开Debug日志成功');
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`打开Debug日志失败, error: ${errorMsg}`);
+                Alert.alert('turnOnIOSDebug',`打开Debug日志失败, error: ${errorMsg}`);
             }
         });
     }
 
     const setBadgeNum = () => {
         if (badge === null || badge === undefined) {
-            Alert.alert('请输入角标数');
+            Alert.alert('setBadgeNum','请输入角标数');
         } else {
             AliyunPush.setIOSBadgeNum(+badge).then(result => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
                     setBadge('');
-                    Alert.alert(`设置角标 ${badge} 成功👋`);
+                    Alert.alert('setBadgeNum',`设置角标 ${badge} 成功`);
                 } else {
                     let errorMsg = result.errorMsg?.toString();
-                    Alert.alert(`设置角标 ${badge} 失败, error: ${errorMsg}`);
+                    Alert.alert('setBadgeNum',`设置角标 ${badge} 失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -40,16 +40,16 @@ const IOSPage = () => {
 
     const syncBadgeNum = () => {
         if (badge === null || badge === undefined) {
-            Alert.alert('请输入角标数');
+            Alert.alert('syncBadgeNum','请输入角标数');
         } else {
             AliyunPush.syncIOSBadgeNum(+badge).then(result => {
                 let code = result.code;
                 if (code === AliyunPush.kAliyunPushSuccessCode) {
                     setBadge('');
-                    Alert.alert(`同步角标 ${badge} 成功👋`);
+                    Alert.alert('syncBadgeNum',`同步角标 ${badge} 成功`);
                 } else {
                     let errorMsg = result.errorMsg?.toString();
-                    Alert.alert(`同步角标 ${badge} 失败, error: ${errorMsg}`);
+                    Alert.alert('syncBadgeNum',`同步角标 ${badge} 失败, error: ${errorMsg}`);
                 }
             });
         }
@@ -64,9 +64,9 @@ const IOSPage = () => {
     const checkChannelOpened = () => {
         AliyunPush.isIOSChannelOpened().then(opened => {
             if (opened) {
-                Alert.alert('通道已打开');
+                Alert.alert('isIOSChannelOpened','通道已打开');
             } else {
-                Alert.alert('通道未打开');
+                Alert.alert('isIOSChannelOpened','通道未打开');
             }
         });
     }
@@ -76,10 +76,10 @@ const IOSPage = () => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
                 setBadge('');
-                Alert.alert('设置前台显示通知成功👋');
+                Alert.alert('showNoticeWhenForeground','设置前台显示通知成功');
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`设置前台显示通知失败, error: ${errorMsg}`);
+                Alert.alert('showNoticeWhenForeground',`设置前台显示通知失败, error: ${errorMsg}`);
             }
         });
     }
@@ -89,10 +89,10 @@ const IOSPage = () => {
             let code = result.code;
             if (code === AliyunPush.kAliyunPushSuccessCode) {
                 setBadge('');
-                Alert.alert('设置前台不显示通知成功👋');
+                Alert.alert('showNoticeWhenForeground','设置前台不显示通知成功');
             } else {
                 let errorMsg = result.errorMsg?.toString();
-                Alert.alert(`设置前台不显示通知失败, error: ${errorMsg}`);
+                Alert.alert('showNoticeWhenForeground',`设置前台不显示通知失败, error: ${errorMsg}`);
             }
         });
     }
